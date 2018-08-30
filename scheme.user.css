@@ -68,6 +68,23 @@
 
 ==/UserStyle== */
 
-@-moz-document domain("") {
+@-moz-document regexp("https?://.*") {
+  :root {
+    --dark:    /*[[dark]]*/;
+    --darker:  /*[[darker]]*/;
+    --light:   /*[[light]]*/ ;
+    --lighter: /*[[lighter]]*/;
+    --accent:  /*[[accent]]*/;
+    --shadow:  /*[[shadow]]*/;
+    --yellow:  /*[[yellow]]*/;
+    --orange:  /*[[orange]]*/;
+    --red:     /*[[red]]*/;
+    --magenta: /*[[magenta]]*/;
+    --violet:  /*[[violet]]*/;
+    --blue:    /*[[blue]]*/;
+    --cyan:    /*[[cyan]]*/;
+    --green:   /*[[green]]*/;
+  }
+}
 
 }

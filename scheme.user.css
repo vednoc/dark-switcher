@@ -38,39 +38,57 @@
 
 @var select shadow "Shadow intensity" {
   "Default": "rgba(0, 0, 0, 0.07)",
+  "Custom": "/*[[custom_shadow]]*\/"
 }
+@var color custom_shadow "Custom shadow intensity" rgba(0, 0, 0, 0.1)
 
 @var select yellow "Yellow color" {
   "Solarized": "#b58900",
+  "Custom": "/*[[custom_yellow]]*\/"
 }
+@var color custom_yellow "Custom yellow color" yellow
 
 @var select orange "Orange color" {
   "Solarized": "#cb4b16",
+  "Custom": "/*[[custom_orange]]*\/"
 }
+@var color custom_orange "Custom orange color" orange
 
 @var select red "Red color" {
   "Solarized": "#dc322f",
+  "Custom": "/*[[custom_red]]*\/"
 }
+@var color custom_red "Custom red color" red
 
 @var select magenta "Magenta color" {
   "Solarized": "#d33682",
+  "Custom": "/*[[custom_magenta]]*\/"
 }
+@var color custom_magenta "Custom magenta color" magenta
 
 @var select violet "Violet color" {
   "Solarized": "#6c71c4",
+  "Custom": "/*[[custom_violet]]*\/"
 }
+@var color custom_violet "Custom violet color" violet
 
 @var select blue "Blue color" {
   "Solarized": "#268bd2",
+  "Custom": "/*[[custom_blue]]*\/"
 }
+@var color custom_blue "Custom blue color" blue
 
 @var select cyan "Cyan color" {
   "Solarized": "#2aa198",
+  "Custom": "/*[[custom_cyan]]*\/"
 }
+@var color custom_cyan "Custom cyan color" cyan
 
 @var select green "Green color" {
   "Solarized": "#859900",
+  "Custom": "/*[[custom_green]]*\/"
 }
+@var color custom_green "Custom green color" green
 
 ==/UserStyle== */
 

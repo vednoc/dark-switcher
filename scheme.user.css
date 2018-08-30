@@ -4,6 +4,31 @@
 @description  Custom color-schemes for my userstyles.
 @author       vednoc
 @preprocessor uso
+
+@var select dark "Background color" {
+  "Solarized Light": "#fdf6e3",
+}
+
+@var select darker "Background highlight" {
+  "Solarized Light": "#eee8d5",
+}
+
+@var select light "Primary text color" {
+  "Solarized Light": "#657b83",
+}
+
+@var select lighter "Secondary text color" {
+  "Solarized Light": "#93a1a1",
+}
+
+@var select accent "Emphasized text color" {
+  "Solarized Light": "#586e75",
+}
+
+@var select shadow "Shadow intensity" {
+  "Default": "rgba(0, 0, 0, 0.07)",
+}
+
 ==/UserStyle== */
 
 @-moz-document domain("") {

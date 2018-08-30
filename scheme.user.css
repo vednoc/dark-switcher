@@ -9,26 +9,31 @@
 @var select dark "Background color" {
   "Solarized Light": "#fdf6e3",
   "Solarized Dark": "#073642",
+  "Discord": "#2f3136",
 }
 
 @var select darker "Background highlight" {
   "Solarized Light": "#eee8d5",
   "Solarized Dark": "#002b36",
+  "Discord": "#1e2124",
 }
 
 @var select light "Primary text color" {
   "Solarized Light": "#657b83",
   "Solarized Dark": "#839496",
+  "Discord": "#ada8aa",
 }
 
 @var select lighter "Secondary text color" {
   "Solarized Light": "#93a1a1",
   "Solarized Dark": "#93a1a1",
+  "Discord": "#ffffff",
 }
 
 @var select accent "Emphasized text color" {
   "Solarized Light": "#586e75",
   "Solarized Dark": "#586e75",
+  "Discord": "#7289da",
 }
 
 @var select shadow "Shadow intensity" {

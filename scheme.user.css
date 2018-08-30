@@ -34,6 +34,38 @@
   "Default": "rgba(0, 0, 0, 0.07)",
 }
 
+@var select yellow "Yellow color" {
+  "Solarized": "#b58900",
+}
+
+@var select orange "Orange color" {
+  "Solarized": "#cb4b16",
+}
+
+@var select red "Red color" {
+  "Solarized": "#dc322f",
+}
+
+@var select magenta "Magenta color" {
+  "Solarized": "#d33682",
+}
+
+@var select violet "Violet color" {
+  "Solarized": "#6c71c4",
+}
+
+@var select blue "Blue color" {
+  "Solarized": "#268bd2",
+}
+
+@var select cyan "Cyan color" {
+  "Solarized": "#2aa198",
+}
+
+@var select green "Green color" {
+  "Solarized": "#859900",
+}
+
 ==/UserStyle== */
 
 @-moz-document domain("") {

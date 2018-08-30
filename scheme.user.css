@@ -10,31 +10,41 @@
   "Solarized Light": "#fdf6e3",
   "Solarized Dark": "#073642",
   "Discord": "#2f3136",
+  "Custom": "/*[[custom_dark]]*\/"
 }
+@var color custom_dark "Custom background color" #2e2e2e
 
 @var select darker "Background highlight" {
   "Solarized Light": "#eee8d5",
   "Solarized Dark": "#002b36",
   "Discord": "#1e2124",
+  "Custom": "/*[[custom_darker]]*\/"
 }
+@var color custom_darker "Custom background highlight color" #212121
 
 @var select light "Primary text color" {
   "Solarized Light": "#657b83",
   "Solarized Dark": "#839496",
   "Discord": "#ada8aa",
+  "Custom": "/*[[custom_light]]*\/"
 }
+@var color custom_light "Custom primary text color" #d1d1d1
 
 @var select lighter "Secondary text color" {
   "Solarized Light": "#93a1a1",
   "Solarized Dark": "#93a1a1",
   "Discord": "#ffffff",
+  "Custom": "/*[[custom_lighter]]*\/"
 }
+@var color custom_lighter "Custom secondary text color" #e9e9e9
 
 @var select accent "Emphasized text color" {
   "Solarized Light": "#586e75",
   "Solarized Dark": "#586e75",
   "Discord": "#7289da",
+  "Custom": "/*[[custom_accent]]*\/"
 }
+@var color custom_accent "Custom emphasized text color" #1da1a1
 
 @var select shadow "Shadow intensity" {
   "Default": "rgba(0, 0, 0, 0.07)",

@@ -114,19 +114,19 @@
 
 @-moz-document regexp("https?://.*") {
   :root {
-    --dark:    /*[[dark]]*/;
-    --darker:  /*[[darker]]*/;
-    --light:   /*[[light]]*/ ;
-    --lighter: /*[[lighter]]*/;
-    --accent:  /*[[accent]]*/;
-    --shadow:  /*[[shadow]]*/;
-    --yellow:  /*[[yellow]]*/;
-    --orange:  /*[[orange]]*/;
-    --red:     /*[[red]]*/;
-    --magenta: /*[[magenta]]*/;
-    --violet:  /*[[violet]]*/;
-    --blue:    /*[[blue]]*/;
-    --cyan:    /*[[cyan]]*/;
-    --green:   /*[[green]]*/;
+    --dark:    /*[[dark]]*/    !important;
+    --darker:  /*[[darker]]*/  !important;
+    --light:   /*[[light]]*/   !important;
+    --lighter: /*[[lighter]]*/ !important;
+    --accent:  /*[[accent]]*/  !important;
+    --shadow:  /*[[shadow]]*/  !important;
+    --yellow:  /*[[yellow]]*/  !important;
+    --orange:  /*[[orange]]*/  !important;
+    --red:     /*[[red]]*/     !important;
+    --magenta: /*[[magenta]]*/ !important;
+    --violet:  /*[[violet]]*/  !important;
+    --blue:    /*[[blue]]*/    !important;
+    --cyan:    /*[[cyan]]*/    !important;
+    --green:   /*[[ green]]*/  !important;
   }
 }

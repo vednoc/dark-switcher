@@ -1,9 +1,11 @@
 /* ==UserStyle==
 @name         Theme switcher by Mew
-@namespace    gitlab.com/vednoc/theme_switcher
 @version      0.1.0
-@description  Custom color-schemes for my userstyles.
 @author       vednoc
+@description  A variety of color-schemes for my userstyles.
+@namespace    gitlab.com/vednoc/theme_switcher
+@homepageURL  https://gitlab.com/vednoc/theme_switcher
+@updateURL    https://gitlab.com/vednoc/theme_switcher/raw/master/switcher.user.css
 @preprocessor uso
 
 @var select dark "Background color" {

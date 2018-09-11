@@ -58,6 +58,11 @@
 }
 @var color custom_accent "Custom emphasized text color" #1da1a1
 
+@var select icon "Icon color" {
+  "Custom": "/*[[custom_icon]]*\/"
+}
+@var color custom_icon "Custom icon color" #d1d1d1
+
 @var select shadow "Shadow intensity" {
   "Default": "rgba(0, 0, 0, 0.07)",
   "Custom": "/*[[custom_shadow]]*\/"
@@ -121,6 +126,7 @@
     --light:   /*[[light]]*/   !important;
     --lighter: /*[[lighter]]*/ !important;
     --accent:  /*[[accent]]*/  !important;
+    --icon:    /*[[icon]]*/    !important;
     --shadow:  /*[[shadow]]*/  !important;
     --yellow:  /*[[yellow]]*/  !important;
     --orange:  /*[[orange]]*/  !important;

@@ -84,7 +84,10 @@
 @var color custom_icon "Custom icon color" #d1d1d1
 
 @var select shadow "Shadow intensity" {
-  "Default": "rgba(0, 0, 0, 0.07)",
+  "Soft": "rgba(0, 0, 0, 0.07)",
+  "Medium": "rgba(0, 0, 0, 0.12)",
+  "Hard": "rgba(0, 0, 0, 0.17)",
+  "Extreme": "rgba(0, 0, 0, 0.22)",
   "Custom": "/*[[custom_shadow]]*\/"
 }
 @var color custom_shadow "Custom shadow intensity" rgba(0, 0, 0, 0.1)

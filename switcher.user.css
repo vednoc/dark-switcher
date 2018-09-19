@@ -94,48 +94,72 @@
 
 @var select yellow "Yellow color" {
   "Solarized": "#b58900",
+  "Gruvbox normal yellow": "#d79921",
+  "Gruvbox light yellow": "#fabd2f",
+  "Gruvbox dark yellow": "#b57614",
   "Custom": "/*[[custom_yellow]]*\/"
 }
 @var color custom_yellow "Custom yellow color" yellow
 
 @var select orange "Orange color" {
   "Solarized": "#cb4b16",
+  "Gruvbox normal orange": "#d65d0e",
+  "Gruvbox light orange": "#fe8019",
+  "Gruvbox dark orange": "#af3a03",
   "Custom": "/*[[custom_orange]]*\/"
 }
 @var color custom_orange "Custom orange color" orange
 
 @var select red "Red color" {
   "Solarized": "#dc322f",
+  "Gruvbox normal red": "#cc241d",
+  "Gruvbox light red": "#fb4934",
+  "Gruvbox dark red": "#9d0006",
   "Custom": "/*[[custom_red]]*\/"
 }
 @var color custom_red "Custom red color" red
 
 @var select magenta "Magenta color" {
   "Solarized": "#d33682",
+  "Gruvbox normal magenta": "#928374",
+  "Gruvbox light magenta": "#a89984",
+  "Gruvbox dark magenta": "#7c6f64",
   "Custom": "/*[[custom_magenta]]*\/"
 }
 @var color custom_magenta "Custom magenta color" magenta
 
 @var select violet "Violet color" {
   "Solarized": "#6c71c4",
+  "Gruvbox normal violet": "#b16286",
+  "Gruvbox light violet": "#d3869b",
+  "Gruvbox dark violet": "#8f3f71",
   "Custom": "/*[[custom_violet]]*\/"
 }
 @var color custom_violet "Custom violet color" violet
 
 @var select blue "Blue color" {
   "Solarized": "#268bd2",
+  "Gruvbox normal blue": "#458588",
+  "Gruvbox light blue": "#83a598",
+  "Gruvbox dark blue": "#076678",
   "Custom": "/*[[custom_blue]]*\/"
 }
 @var color custom_blue "Custom blue color" blue
 
 @var select cyan "Cyan color" {
   "Solarized": "#2aa198",
+  "Gruvbox normal cyan": "#689d6a",
+  "Gruvbox light cyan": "#427b58",
+  "Gruvbox dark cyan": "#7c6f64",
   "Custom": "/*[[custom_cyan]]*\/"
 }
 @var color custom_cyan "Custom cyan color" cyan
 
 @var select green "Green color" {
   "Solarized": "#859900",
+  "Gruvbox normal green": "#98971a",
+  "Gruvbox light green": "#b8bb26",
+  "Gruvbox dark green": "#79740e",
   "Custom": "/*[[custom_green]]*\/"
 }
 @var color custom_green "Custom green color" green

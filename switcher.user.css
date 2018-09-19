@@ -11,6 +11,9 @@
 @var select dark "Background color" {
   "Solarized Light": "#fdf6e3",
   "Solarized Dark": "#073642",
+  "Gruvbox Light Soft": "#f2e5bc",
+  "Gruvbox Light Medium": "#fbf1c7",
+  "Gruvbox Light Hard": "#f9f5d7",
   "Discord": "#2f3136",
   "DeepDark": "#111111",
   "Arc Dark": "#414A59",
@@ -21,6 +24,10 @@
 @var select darker "Background highlight" {
   "Solarized Light": "#eee8d5",
   "Solarized Dark": "#002b36",
+  "Gruvbox Light bg1": "#ebdbb2",
+  "Gruvbox Light bg2": "#d5c4a1",
+  "Gruvbox Light bg3": "#bdae93",
+  "Gruvbox Light bg4": "#a89984",
   "Discord": "#1e2124",
   "DeepDark": "#232323",
   "Arc Dark": "#343944",
@@ -31,6 +38,7 @@
 @var select light "Primary text color" {
   "Solarized Light": "#657b83",
   "Solarized Dark": "#839496",
+  "Gruvbox Light": "#3c3836",
   "Discord": "#ada8aa",
   "DeepDark": "#eff0f1",
   "Arc Dark": "#C1C8D1",
@@ -41,6 +49,7 @@
 @var select lighter "Secondary text color" {
   "Solarized Light": "#93a1a1",
   "Solarized Dark": "#93a1a1",
+  "Gruvbox Light": "#665c54",
   "Discord": "#ffffff",
   "DeepDark": "#CCCCCC",
   "Arc Dark": "#B3BAC5",
@@ -51,6 +60,7 @@
 @var select accent "Emphasized text color" {
   "Solarized Light": "#586e75",
   "Solarized Dark": "#586e75",
+  "Gruvbox Light": "#d65d0e",
   "Discord": "#7289da",
   "DeepDark": "#00adee",
   "Arc Dark": "#5294E2",

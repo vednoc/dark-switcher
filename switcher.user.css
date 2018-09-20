@@ -102,6 +102,7 @@
   "Gruvbox normal yellow": "#d79921",
   "Gruvbox light yellow": "#fabd2f",
   "Gruvbox dark yellow": "#b57614",
+  "Dracula": "#f1fa8c",
   "Custom": "/*[[custom_yellow]]*\/"
 }
 @var color custom_yellow "Custom yellow color" yellow
@@ -111,6 +112,7 @@
   "Gruvbox normal orange": "#d65d0e",
   "Gruvbox light orange": "#fe8019",
   "Gruvbox dark orange": "#af3a03",
+  "Dracula": "#ffb86c",
   "Custom": "/*[[custom_orange]]*\/"
 }
 @var color custom_orange "Custom orange color" orange
@@ -120,6 +122,7 @@
   "Gruvbox normal red": "#cc241d",
   "Gruvbox light red": "#fb4934",
   "Gruvbox dark red": "#9d0006",
+  "Dracula": "#ff5555",
   "Custom": "/*[[custom_red]]*\/"
 }
 @var color custom_red "Custom red color" red
@@ -129,6 +132,7 @@
   "Gruvbox normal magenta": "#928374",
   "Gruvbox light magenta": "#a89984",
   "Gruvbox dark magenta": "#7c6f64",
+  "Dracula": "#ff79c6",
   "Custom": "/*[[custom_magenta]]*\/"
 }
 @var color custom_magenta "Custom magenta color" magenta
@@ -138,6 +142,7 @@
   "Gruvbox normal violet": "#b16286",
   "Gruvbox light violet": "#d3869b",
   "Gruvbox dark violet": "#8f3f71",
+  "Dracula": "#bd93f9",
   "Custom": "/*[[custom_violet]]*\/"
 }
 @var color custom_violet "Custom violet color" violet
@@ -147,6 +152,7 @@
   "Gruvbox normal blue": "#458588",
   "Gruvbox light blue": "#83a598",
   "Gruvbox dark blue": "#076678",
+  "Dracula": "#507bfa",
   "Custom": "/*[[custom_blue]]*\/"
 }
 @var color custom_blue "Custom blue color" blue
@@ -156,6 +162,7 @@
   "Gruvbox normal cyan": "#689d6a",
   "Gruvbox light cyan": "#427b58",
   "Gruvbox dark cyan": "#7c6f64",
+  "Dracula": "#8be9fd",
   "Custom": "/*[[custom_cyan]]*\/"
 }
 @var color custom_cyan "Custom cyan color" cyan
@@ -165,6 +172,7 @@
   "Gruvbox normal green": "#98971a",
   "Gruvbox light green": "#b8bb26",
   "Gruvbox dark green": "#79740e",
+  "Dracula": "#50fa7b",
   "Custom": "/*[[custom_green]]*\/"
 }
 @var color custom_green "Custom green color" green

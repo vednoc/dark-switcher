@@ -19,6 +19,7 @@
   "Gruvbox Dark Hard": "#1d2021",
   "Discord": "#2f3136",
   "DeepDark": "#111111",
+  "BreezeDark": "#232629",
   "Arc Dark": "#414A59",
   "Dracula": "#282a36",
   "Custom": "/*[[custom_dark]]*\/"
@@ -38,6 +39,7 @@
   "Gruvbox Dark bg4": "#7c6f64",
   "Discord": "#1e2124",
   "DeepDark": "#232323",
+  "BreezeDark": "#31363b",
   "Arc Dark": "#343944",
   "Dracula": "#44475a",
   "Custom": "/*[[custom_darker]]*\/"
@@ -51,6 +53,7 @@
   "Gruvbox Dark": "#fbf1c7",
   "Discord": "#ada8aa",
   "DeepDark": "#eff0f1",
+  "BreezeDark": "#eff0f1",
   "Arc Dark": "#C1C8D1",
   "Dracula": "#f8f8f2",
   "Custom": "/*[[custom_light]]*\/"
@@ -64,6 +67,7 @@
   "Gruvbox Dark": "#d5c4a1",
   "Discord": "#ffffff",
   "DeepDark": "#CCCCCC",
+  "BreezeDark": "#bdc3c7",
   "Arc Dark": "#B3BAC5",
   "Dracula": "#6272a4",
   "Custom": "/*[[custom_lighter]]*\/"
@@ -77,6 +81,7 @@
   "Gruvbox Dark": "#d65d0e",
   "Discord": "#7289da",
   "DeepDark": "#00adee",
+  "BreezeDark": "#3DAEE9",
   "Arc Dark": "#5294E2",
   "Dracula": "#e1e1e1",
   "Custom": "/*[[custom_accent]]*\/"
@@ -102,6 +107,7 @@
   "Gruvbox normal yellow": "#d79921",
   "Gruvbox light yellow": "#fabd2f",
   "Gruvbox dark yellow": "#b57614",
+  "Breeze": "#FDBC4B",
   "Dracula": "#f1fa8c",
   "Custom": "/*[[custom_yellow]]*\/"
 }
@@ -112,6 +118,7 @@
   "Gruvbox normal orange": "#d65d0e",
   "Gruvbox light orange": "#fe8019",
   "Gruvbox dark orange": "#af3a03",
+  "Breeze": "#F79A63",
   "Dracula": "#ffb86c",
   "Custom": "/*[[custom_orange]]*\/"
 }
@@ -122,6 +129,7 @@
   "Gruvbox normal red": "#cc241d",
   "Gruvbox light red": "#fb4934",
   "Gruvbox dark red": "#9d0006",
+  "Breeze": "#DA4453",
   "Dracula": "#ff5555",
   "Custom": "/*[[custom_red]]*\/"
 }
@@ -132,6 +140,7 @@
   "Gruvbox normal magenta": "#928374",
   "Gruvbox light magenta": "#a89984",
   "Gruvbox dark magenta": "#7c6f64",
+  "Breeze": "#FE9EAD",
   "Dracula": "#ff79c6",
   "Custom": "/*[[custom_magenta]]*\/"
 }
@@ -142,6 +151,7 @@
   "Gruvbox normal violet": "#b16286",
   "Gruvbox light violet": "#d3869b",
   "Gruvbox dark violet": "#8f3f71",
+  "Breeze": "#60459F",
   "Dracula": "#bd93f9",
   "Custom": "/*[[custom_violet]]*\/"
 }
@@ -152,6 +162,7 @@
   "Gruvbox normal blue": "#458588",
   "Gruvbox light blue": "#83a598",
   "Gruvbox dark blue": "#076678",
+  "Breeze": "#2980b9",
   "Dracula": "#507bfa",
   "Custom": "/*[[custom_blue]]*\/"
 }
@@ -162,6 +173,7 @@
   "Gruvbox normal cyan": "#689d6a",
   "Gruvbox light cyan": "#427b58",
   "Gruvbox dark cyan": "#7c6f64",
+  "Breeze": "#1abc9c",
   "Dracula": "#8be9fd",
   "Custom": "/*[[custom_cyan]]*\/"
 }
@@ -172,6 +184,7 @@
   "Gruvbox normal green": "#98971a",
   "Gruvbox light green": "#b8bb26",
   "Gruvbox dark green": "#79740e",
+  "Breeze": "#27AE60",
   "Dracula": "#50fa7b",
   "Custom": "/*[[custom_green]]*\/"
 }

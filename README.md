@@ -1,4 +1,4 @@
-# theme switcher [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-285959.svg)](https://gitlab.com/vednoc/theme_switcher/raw/master/switcher.user.css)
+# theme switcher
 
 A simple implementation of color-scheme switcher for my userstyles. Big thank you to [RaitaroH](https://github.com/RaitaroH) for the color-schemes and the idea of how to implement custom colors within `select` UserCSS setting. :heart:
 

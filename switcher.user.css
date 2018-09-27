@@ -8,6 +8,9 @@
 @updateURL    https://gitlab.com/vednoc/theme_switcher/raw/master/switcher.user.css
 @preprocessor uso
 
+@var checkbox bg_invert "Background inversion" 0
+@var text     bg_filter "Background filters"   opacity(0.05)
+
 @var select dark "Background color" {
   "Solarized Light": "#fdf6e3",
   "Solarized Dark": "#073642",
@@ -209,5 +212,10 @@
     --blue:    /*[[blue]]*/    !important;
     --cyan:    /*[[cyan]]*/    !important;
     --green:   /*[[green]]*/   !important;
+  }
+
+  /* Background settings. */
+  body::after {
+    filter: invert(/*[[bg_invert]]*/) /*[[bg_filter]]*/ !important;
   }
 }

@@ -92,6 +92,8 @@
 @var color custom_accent "Custom emphasized text color" #1da1a1
 
 @var select icon "Icon color" {
+  "White": "#eeeeee",
+  "Dark": "#222222",
   "Custom": "/*[[custom_icon]]*\/"
 }
 @var color custom_icon "Custom icon color" #d1d1d1

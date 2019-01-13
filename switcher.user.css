@@ -218,7 +218,7 @@
   }
 
   /* Background settings. */
-  body::after {
+  body::before, body::after {
     filter: invert(/*[[bg_invert]]*/) /*[[bg_filter]]*/ !important;
   }
 }

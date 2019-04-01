@@ -47,7 +47,7 @@
 }
 @var color custom_darker "Custom background highlight color" #212121
 
-@var select light "Light text color" {
+@var select light "Primary text color" {
   "Solarized Light": "#657b83",
   "Solarized Dark": "#839496",
   "Gruvbox Light": "#3c3836",
@@ -59,9 +59,9 @@
   "Dracula": "#f8f8f2",
   "Custom": "/*[[custom_light]]*\/"
 }
-@var color custom_light "Custom light text color" #d1d1d1
+@var color custom_light "Custom primary text color" #d1d1d1
 
-@var select lighter "Lighter text color" {
+@var select lighter "Secondary text color" {
   "Solarized Light": "#93a1a1",
   "Solarized Dark": "#93a1a1",
   "Gruvbox Light": "#665c54",
@@ -73,7 +73,7 @@
   "Dracula": "#6272a4",
   "Custom": "/*[[custom_lighter]]*\/"
 }
-@var color custom_lighter "Custom lighter text color" #e9e9e9
+@var color custom_lighter "Custom secondary text color" #e9e9e9
 
 @var select accent "Emphasized text color" {
   "Solarized Light": "#586e75",

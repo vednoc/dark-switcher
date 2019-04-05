@@ -213,6 +213,14 @@
     --blue:    /*[[blue]]*/    !important;
     --cyan:    /*[[cyan]]*/    !important;
     --green:   /*[[green]]*/   !important;
+      
+    /* DeepDark themes. */
+    --main-color:        /*[[accent]]*/  !important;
+    --main-background:   /*[[dark]]*/    !important;
+    --second-background: /*[[dark]]*/    !important;
+    --hover-background:  /*[[darker]]*/  !important;
+    --main-text:         /*[[light]]*/   !important;
+    --dimmer-text:       /*[[lighter]]*/ !important;
   }
 
   /* Background settings. */

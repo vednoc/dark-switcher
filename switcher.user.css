@@ -197,7 +197,7 @@
 
 ==/UserStyle== */
 
-@-moz-document regexp("https?://.*"), regexp("file://.*") {
+@-moz-document regexp("(https?|file|(moz|chrome)-extension)://.*") {
   :root {
     --dark:    /*[[dark]]*/    !important;
     --darker:  /*[[darker]]*/  !important;

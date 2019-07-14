@@ -10,6 +10,7 @@
 
 @var checkbox ic_invert "Icons: Enable inversion" 1
 @var text bg_filter "Background: Custom filters" "opacity(0.1) !important"
+@var text bg_image "Background: Custom image" "url('path-to-custom-image.jpg') !important"
 
 @var select dark "Background color" {
   "Solarized Light": "#fdf6e3",
@@ -224,5 +225,6 @@
 
     --icinvert: /*[[ic_invert]]*/ !important;
     --bg-filter: /*[[bg_filter]]*/;
+    --background: /*[[bg_image]]*/;
   }
 }

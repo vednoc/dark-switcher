@@ -8,8 +8,8 @@
 @updateURL    https://gitlab.com/vednoc/theme_switcher/raw/master/switcher.user.css
 @preprocessor uso
 
-@var checkbox bg_invert "Background inversion" 0
 @var text     bg_filter "Background filters"   opacity(0.05)
+@var checkbox ic_invert "Icons: Enable inversion" 1
 
 @var select dark "Background color" {
   "Solarized Light": "#fdf6e3",
@@ -221,6 +221,8 @@
     --hover-background:  /*[[darker]]*/  !important;
     --main-text:         /*[[light]]*/   !important;
     --dimmer-text:       /*[[lighter]]*/ !important;
+
+    --icinvert: /*[[ic_invert]]*/ !important;
   }
 
   /* Background settings. */

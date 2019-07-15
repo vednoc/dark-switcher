@@ -26,6 +26,8 @@
   "BreezeDark": "#232629",
   "Arc Dark": "#414A59",
   "Dracula": "#282a36",
+  "City Lights 1": "#1d252c",
+  "City Lights 2": "#181d23",
   "Custom": "/*[[custom_dark]]*\/"
 }
 @var color custom_dark "Custom background color" #2e2e2e
@@ -44,6 +46,9 @@
   "BreezeDark": "#31363b",
   "Arc Dark": "#343944",
   "Dracula": "#44475a",
+  "City Lights 1": "#1d252c",
+  "City Lights 2": "#212f38",
+  "City Lights 3": "#181e24",
   "Custom": "/*[[custom_darker]]*\/"
 }
 @var color custom_darker "Custom background highlight color" #212121
@@ -58,6 +63,7 @@
   "BreezeDark": "#bdc3c7",
   "Arc Dark": "#C1C8D1",
   "Dracula": "#f8f8f2",
+  "City Lights": "#666d81",
   "Custom": "/*[[custom_light]]*\/"
 }
 @var color custom_light "Custom primary text color" #d1d1d1
@@ -72,6 +78,7 @@
   "BreezeDark": "#eff0f1",
   "Arc Dark": "#B3BAC5",
   "Dracula": "#6272a4",
+  "City Lights": "#41505e",
   "Custom": "/*[[custom_lighter]]*\/"
 }
 @var color custom_lighter "Custom secondary text color" #e9e9e9
@@ -86,6 +93,7 @@
   "BreezeDark": "#3DAEE9",
   "Arc Dark": "#5294E2",
   "Dracula": "#e1e1e1",
+  "City Lights": "#b7c5d3",
   "Custom": "/*[[custom_accent]]*\/"
 }
 @var color custom_accent "Custom emphasized text color" #1da1a1

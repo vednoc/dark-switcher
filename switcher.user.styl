@@ -8,6 +8,7 @@
 @updateURL    https://gitlab.com/vednoc/dark-switcher/raw/master/switcher.user.styl
 @preprocessor stylus
 
+@var checkbox overwrite 'Use `!important` to overwrite colors' 1
 @var select primary 'Primary colors' {
     'Gruvbox Dark Medium': 'gruvbox-dark-medium',
     'Gruvbox Light Medium': 'gruvbox-light-medium',
@@ -17,6 +18,9 @@
 
 @-moz-document regexp('(https?|file|(moz|chrome)-extension)://.*') {
     :root {
+        // Whether to use `!important` or not.
+        if ( overwrite == 1 ) { i = !important }
+
         if ( primary == 'gruvbox-dark-medium' ) {
             --bg: #282828   i
             --hl: #32302f   i

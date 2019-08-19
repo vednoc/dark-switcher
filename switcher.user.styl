@@ -7,9 +7,22 @@
 @homepageURL  https://gitlab.com/vednoc/dark-switcher
 @updateURL    https://gitlab.com/vednoc/dark-switcher/raw/master/switcher.user.styl
 @preprocessor stylus
+
+@var select primary 'Primary colors' {
+    'Gruvbox Dark Medium': 'gruvbox-dark-medium',
+}
 ==/UserStyle== */
 
 @-moz-document regexp('(https?|file|(moz|chrome)-extension)://.*') {
     :root {
+        if ( primary == 'gruvbox-dark-medium' ) {
+            --bg: #282828   i
+            --hl: #32302f   i
+            --bd: #3c3836   i
+            --fg: #fbf1c7   i
+            --cm: #d5c4a1   i
+            --ac: #d65d0e   i
+            --sh: #00000018 i
+        }
     }
 }

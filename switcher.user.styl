@@ -9,6 +9,8 @@
 @preprocessor stylus
 
 @var checkbox overwrite 'Use `!important` to overwrite colors' 1
+@var checkbox deepdark  'Overwrite colors for DeepDark themes' 1
+
 @var select primary 'Primary colors' {
     'Gruvbox Dark Medium': 'gruvbox-dark-medium',
     'Gruvbox Light Medium': 'gruvbox-light-medium',
@@ -63,5 +65,15 @@
         --lighter: var(--cm) i
         --accent : var(--ac) i
         --shadow : var(--sh) i
+
+        // Shim for @RaitaroH's DeepDark variables.
+        if ( deepdark == 1 ) {
+            --main-color       : var(--ac) i
+            --main-background  : var(--bg) i
+            --hover-background : var(--bd) i
+            --second-background: var(--hl) i
+            --main-text        : var(--fg) i
+            --dimmer-text      : var(--cm) i
+        }
     }
 }

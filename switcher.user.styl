@@ -19,6 +19,7 @@
 @var select secondary 'Secondary colors' {
     'Gruvbox Neutral': 'gruvbox-neutral',
     'Gruvbox Bright': 'gruvbox-bright',
+    'Gruvbox Faded': 'gruvbox-faded',
     'Custom colors*': 'custom',
 }
 @var color bg      'Custom: Primary bg color  ' #212121
@@ -91,6 +92,15 @@
             --green  : #b8bb26 i;
             --blue   : #83a598 i;
             --cyan   : #8ec07c i;
+        } else if ( secondary == 'gruvbox-faded' ) {
+            --red    : #9d0006 i;
+            --orange : #af3a03 i;
+            --yellow : #b57614 i;
+            --magenta: #8f3f71 i;
+            --violet : #6f1f71 i;
+            --green  : #79740e i;
+            --blue   : #076678 i;
+            --cyan   : #427b58 i;
         } else {
             --red    : red     i;
             --orange : orange  i;

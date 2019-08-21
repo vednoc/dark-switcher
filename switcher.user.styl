@@ -17,6 +17,7 @@
     'Custom colors*': 'custom',
 }
 @var select secondary 'Secondary colors' {
+    'Gruvbox Neutral': 'gruvbox-neutral',
     'Custom colors*': 'custom',
 }
 @var color bg      'Custom: Primary bg color  ' #212121
@@ -71,7 +72,15 @@
         }
 
         // Secondary colors.
-        if ( secondary == '' ) {
+        if ( secondary == 'gruvbox-neutral' ) {
+            --red    : #cc241d i;
+            --orange : #d64d0e i;
+            --yellow : #d79921 i;
+            --magenta: #c16286 i;
+            --violet : #a14286 i;
+            --green  : #98971a i;
+            --blue   : #458588 i;
+            --cyan   : #689d6a i;
         } else {
             --red    : red     i;
             --orange : orange  i;

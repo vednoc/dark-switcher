@@ -16,14 +16,26 @@
     'Gruvbox Light Medium': 'gruvbox-light-medium',
     'Custom colors*': 'custom',
 }
-@var color bg 'Custom: Primary bg color  ' #212121
-@var color hl 'Custom: Highlight bg color' #262626
-@var color bd 'Custom: Secondary bg color' #2f2f2f
-@var color fg 'Custom: Primary fg color  ' #e6e6e6
-@var color cm 'Custom: Secondary fg color' #b6b6b6
-@var color ac 'Custom: Accent color      ' #ff3f0f
-@var color ac 'Custom: Accent color      ' #0f8f7f
-@var color sh 'Custom: Shadow color      ' #00000025
+@var select secondary 'Secondary colors' {
+    'Custom colors*': 'custom',
+}
+@var color bg      'Custom: Primary bg color  ' #212121
+@var color hl      'Custom: Highlight bg color' #262626
+@var color bd      'Custom: Secondary bg color' #2f2f2f
+@var color fg      'Custom: Primary fg color  ' #e6e6e6
+@var color cm      'Custom: Secondary fg color' #b6b6b6
+@var color ac      'Custom: Accent color      ' #ff3f0f
+@var color ac      'Custom: Accent color      ' #0f8f7f
+@var color sh      'Custom: Shadow color      ' #00000025
+@var color red     'Custom: Red color         ' #a54242
+@var color orange  'Custom: Orange color      ' #de935f
+@var color yellow  'Custom: Yellow color      ' #f0c674
+@var color magenta 'Custom: Magenta color     ' #b294bb
+@var color violet  'Custom: Violet color      ' #85678f
+@var color green   'Custom: Green color       ' #8c9440
+@var color blue    'Custom: Blue color        ' #5f819d
+@var color cyan    'Custom: Cyan color        ' #5e8d87
+
 ==/UserStyle== */
 
 @-moz-document regexp('(https?|file|(moz|chrome)-extension)://.*') {
@@ -31,6 +43,7 @@
         // Whether to use `!important` or not.
         if ( overwrite == 1 ) { i = !important }
 
+        // Primary colors.
         if ( primary == 'gruvbox-dark-medium' ) {
             --bg: #282828   i
             --hl: #32302f   i
@@ -55,6 +68,19 @@
             --cm: cm i
             --ac: ac i
             --sh: sh i
+        }
+
+        // Secondary colors.
+        if ( secondary == '' ) {
+        } else {
+            --red    : red     i;
+            --orange : orange  i;
+            --yellow : yellow  i;
+            --magenta: magenta i;
+            --violet : violet  i;
+            --green  : green   i;
+            --blue   : blue    i;
+            --cyan   : cyan    i;
         }
 
         // Shim for old variables.

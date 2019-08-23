@@ -11,6 +11,9 @@
 @var checkbox overwrite 'Use `!important` to overwrite colors' 1
 @var checkbox deepdark  'Overwrite colors for DeepDark themes' 1
 
+@var checkbox ow_accent 'Explicitly overwrite accent variable' 0
+@var color    ow_ac     'Overwrite: Accent variable color    ' #ff3f0f
+
 @var select primary 'Primary colors' {
     'Gruvbox Dark Medium': 'gruvbox-dark-medium',
     'Gruvbox Dark Hard': 'gruvbox-dark-hard',
@@ -193,6 +196,11 @@
             --green  : green   i;
             --blue   : blue    i;
             --cyan   : cyan    i;
+        }
+
+        // Explicitly overwrite accent variable.
+        if ( ow_accent == 1 ) {
+            --ac: ow_ac i
         }
 
         // Shim for old variables.

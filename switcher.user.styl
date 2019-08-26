@@ -14,6 +14,9 @@
 @var checkbox ow_acvar  'Explicitly overwrite accent variable' 0
 @var color    ow_ac     'Overwrite: Accent variable color    ' #ff3f0f
 
+@var checkbox ow_bgvar  'Explicitly overwrite bg variable    ' 0
+@var color    ow_bg     'Overwrite: Custom background        ' #00000015
+
 @var select primary 'Primary colors' {
     'Gruvbox Dark Medium': 'gruvbox-dark-medium',
     'Gruvbox Dark Hard': 'gruvbox-dark-hard',
@@ -200,6 +203,9 @@
 
         // Explicitly overwrite accent variable.
         if ( ow_acvar == 1 ) { --ac: ow_ac i }
+
+        // Explicitly overwrite bg variable.
+        if ( ow_bgvar == 1 ) { --background: ow_bg i }
 
         // Shim for old variables.
         --dark   : var(--bg) i

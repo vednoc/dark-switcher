@@ -17,6 +17,9 @@
 @var checkbox ow_bgvar  'Explicitly overwrite bg variable    ' 0
 @var color    ow_bg     'Overwrite: Custom background        ' #00000015
 
+@var checkbox ow_shvar  'Explicitly overwrite shadow variable' 0
+@var color    ow_sh     'Overwrite: Custom shadow color      ' #00000030
+
 @var select primary 'Primary colors' {
     'Gruvbox Dark Medium': 'gruvbox-dark-medium',
     'Gruvbox Dark Hard': 'gruvbox-dark-hard',
@@ -242,6 +245,9 @@
 
         // Explicitly overwrite bg variable.
         if ( ow_bgvar == 1 ) { --background: ow_bg i }
+
+        // Explicitly overwrite shadow variable.
+        if ( ow_shvar == 1 ) { --sh: ow_sh i }
 
         // Shim for old variables.
         --dark   : var(--bg) i

@@ -1,7 +1,25 @@
-# theme switcher
+[![Install directly with Stylus][badge]][style]
 
-A companion theme for my other themes that allows for easy changing of the color variables, custom settings, and more! Supports DeepDark themes made by Raitaro.
+Dark-Switcher is a global-settings companion-userstyle for my [userstyles][].
 
-A simple implementation of color-scheme switcher for my userstyles. Big thank you to [RaitaroH](https://github.com/RaitaroH) for the color-schemes and the idea of how to implement custom colors within `select` UserCSS setting. :heart:
+[userstyles]: https://gitlab.com/vednoc/userstyles
+[badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
+[style]: https://gitlab.com/vednoc/dark-switcher/raw/master/switcher.user.styl
 
-To use it, simply click on "Install directly with Stylus" button then head over to my [userstyles](https://gitlab.com/vednoc/userstyles) project to install userstyles you'd like to use.
+## Features
+* Supports all color variables for my userstyles.
+* Supports common options you might want to override.
+* Supports DeepDark userstyles made by [RaitaroH][].
+* Configurable, very extendable, and easy to use.
+
+[RaitaroH]: https://gitlab.com/RaitaroH
+
+## Contributing
+Any contribution is greatly appreciated. Consider supporting me on [ko-fi][] or
+on [LiberaPay][] if you find my projects useful.
+
+[ko-fi]: https://ko-fi.com/vednoc
+[LiberaPay]: https://liberapay.com/vednoc
+
+## Contributors
+- [vednoc](https://gitlab.com/vednoc) - creator, maintainer

@@ -1,0 +1,318 @@
+/* ==UserStyle==
+@name         Dark-Switcher
+@version      0.9.0
+@author       vednoc <vednoc@pm.me> (https://gitlab.com/vednoc)
+@description  Global settings companion-userstyle for my userstyles.
+@namespace    gitlab.com/vednoc/dark-switcher
+@homepageURL  https://gitlab.com/vednoc/dark-switcher
+@updateURL    https://gitlab.com/vednoc/dark-switcher/raw/master/switcher.user.styl
+@preprocessor stylus
+
+@var checkbox overwrite 'Use `!important` to overwrite colors' 1
+@var checkbox deepdark  'Overwrite colors for DeepDark themes' 1
+
+@var checkbox ow_acvar  'Explicitly overwrite accent variable' 0
+@var color    ow_ac     'Overwrite: Accent variable color    ' #ff3f0f
+
+@var checkbox ow_bgvar  'Explicitly overwrite bg variable    ' 0
+@var color    ow_bg     'Overwrite: Custom background        ' #00000015
+
+@var checkbox ow_shvar  'Explicitly overwrite shadow variable' 0
+@var color    ow_sh     'Overwrite: Custom shadow color      ' #00000030
+
+@var select primary 'Primary colors' {
+    'Gruvbox Dark Medium    *': 'gruvbox-dark-medium     ',
+    'Gruvbox Dark Hard       ': 'gruvbox-dark-hard       ',
+    'Gruvbox Dark Soft       ': 'gruvbox-dark-soft       ',
+    'Gruvbox Light Medium    ': 'gruvbox-light-medium    ',
+    'Gruvbox Light Hard      ': 'gruvbox-light-hard      ',
+    'Gruvbox Light Soft      ': 'gruvbox-light-soft      ',
+    'DeepDark                ': 'deep-dark               ',
+    'Solarized Dark          ': 'solarized-dark          ',
+    'Solarized Light         ': 'solarized-light         ',
+    'BreezeDark              ': 'breeze-dark             ',
+    'PureBlack               ': 'pure-black              ',
+    'Inspired Dark           ': 'inspired-dark           ',
+    'Adapta Nokto            ': 'adapta-nokto            ',
+    'Dracula                 ': 'dracula                 ',
+    'Nord Polar Night        ': 'nord-dark               ',
+    'Nord Snow Storm         ': 'nord-light              ',
+    'Custom colors           ': 'custom                  ',
+}
+@var select secondary 'Secondary colors' {
+    'Gruvbox Neutral        *': 'gruvbox-neutral         ',
+    'Gruvbox Bright          ': 'gruvbox-bright          ',
+    'Gruvbox Faded           ': 'gruvbox-faded           ',
+    'DeepDark                ': 'deep-dark               ',
+    'Solarized               ': 'solarized               ',
+    'Dracula                 ': 'dracula                 ',
+    'Nord                    ': 'nord                    ',
+    'Custom colors           ': 'custom                  ',
+}
+@var color bg      'Custom: Primary bg color  ' #212121
+@var color hl      'Custom: Highlight bg color' #262626
+@var color bd      'Custom: Secondary bg color' #2f2f2f
+@var color fg      'Custom: Primary fg color  ' #e6e6e6
+@var color cm      'Custom: Secondary fg color' #b6b6b6
+@var color ac      'Custom: Accent color      ' #ff3f0f
+@var color ac      'Custom: Accent color      ' #0f8f7f
+@var color sh      'Custom: Shadow color      ' #00000025
+@var color red     'Custom: Red color         ' #a54242
+@var color orange  'Custom: Orange color      ' #de935f
+@var color yellow  'Custom: Yellow color      ' #f0c674
+@var color magenta 'Custom: Magenta color     ' #b294bb
+@var color violet  'Custom: Violet color      ' #85678f
+@var color green   'Custom: Green color       ' #8c9440
+@var color blue    'Custom: Blue color        ' #5f819d
+@var color cyan    'Custom: Cyan color        ' #5e8d87
+
+==/UserStyle== */
+
+@-moz-document regexp('(https?|file|(moz|chrome)-extension)://.*') {
+    :root {
+        // Whether to use `!important` or not.
+        if ( overwrite == 1 ) { i = !important }
+
+        // Primary colors.
+        if ( primary == 'gruvbox-dark-medium' ) {
+            --bg: #282828   i
+            --hl: #32302f   i
+            --bd: #3c3836   i
+            --fg: #fbf1c7   i
+            --cm: #d5c4a1   i
+            --ac: #d65d0e   i
+            --sh: #00000018 i
+        } else if ( primary == 'gruvbox-dark-hard' ) {
+            --bg: #1d2021   i
+            --hl: #282828   i
+            --bd: #3c3836   i
+            --fg: #fbf1c7   i
+            --cm: #d5c4a1   i
+            --ac: #d65d0e   i
+            --sh: #00000018 i
+        } else if ( primary == 'gruvbox-dark-soft' ) {
+            --bg: #32302f   i
+            --hl: #363433   i
+            --bd: #3c3836   i
+            --fg: #fbf1c7   i
+            --cm: #d5c4a1   i
+            --ac: #d65d0e   i
+            --sh: #00000018 i
+        } else if ( primary == 'gruvbox-light-medium' ) {
+            --bg: #fbf1c7   i
+            --hl: #ebdbb2   i
+            --bd: #d5c4a1   i
+            --fg: #3c3836   i
+            --cm: #665c54   i
+            --ac: #d65d0e   i
+            --sh: #00000006 i
+        } else if ( primary == 'gruvbox-light-hard' ) {
+            --bg: #f9f5d7   i
+            --hl: #f2e5bc   i
+            --bd: #d5c4a1   i
+            --fg: #3c3836   i
+            --cm: #665c54   i
+            --ac: #d65d0e   i
+            --sh: #00000006 i
+        } else if ( primary == 'gruvbox-light-soft' ) {
+            --bg: #f2e5bc   i
+            --hl: #ebdbb2   i
+            --bd: #d5c4a1   i
+            --fg: #3c3836   i
+            --cm: #665c54   i
+            --ac: #d65d0e   i
+            --sh: #00000008 i
+        } else if ( primary == 'deep-dark' ) {
+            --bg: #111111   i
+            --hl: #181818   i
+            --bd: #232323   i
+            --fg: #eff0f1   i
+            --cm: #cccccc   i
+            --ac: #00adee   i
+            --sh: #00000040 i
+        } else if ( primary == 'breeze-dark' ) {
+            --bg: #232629   i
+            --hl: #2a2e32   i
+            --bd: #31363b   i
+            --fg: #eff0f1   i
+            --cm: #bdc3c7   i
+            --ac: #3daee9   i
+            --sh: #00000021 i
+        } else if ( primary == 'solarized-dark' ) {
+            --bg: #073642   i
+            --hl: #03303c   i
+            --bd: #002b36   i
+            --fg: #fdf6e3   i
+            --cm: #ded8c5   i
+            --ac: #268bd2   i
+            --sh: #00000018 i
+        } else if ( primary == 'solarized-light' ) {
+            --bg: #fdf6e3   i
+            --hl: #f5efdc   i
+            --bd: #ded8c5   i
+            --fg: #073642   i
+            --cm: #586e75   i
+            --ac: #00adee   i
+            --sh: #00000009 i
+        } else if ( primary == 'pure-black' ) {
+            --bg: #000000   i
+            --hl: #101010   i
+            --bd: #212121   i
+            --fg: #cccccc   i
+            --cm: #a0a0a0   i
+            --ac: #00adee   i
+            --sh: #ffffff08 i
+        } else if ( primary == 'inspired-dark') {
+            --bg: #232629   i
+            --hl: #1E2124   i
+            --bd: #414244   i
+            --fg: #eeeeee   i
+            --cm: #cccccc   i
+            --ac: #5e8acc   i
+            --sh: #00000023 i
+        } else if ( primary == 'adapta-nokto') {
+            --bg: #222d32   i
+            --hl: #263238   i
+            --bd: #2a353b   i
+            --fg: #eeeeee   i
+            --cm: #9b9b9b   i
+            --ac: #00bcd4   i
+            --sh: #00000016 i
+        } else if ( primary == 'dracula') {
+            --bg: #282a36   i
+            --hl: #34374a   i
+            --bd: #44475a   i
+            --fg: #f8f8f2   i
+            --cm: #c8c8c2   i
+            --ac: #50fa7b   i
+            --sh: #00000023 i
+        } else if ( primary == 'nord-dark') {
+            --bg: #2e3440   i
+            --hl: #3b4252   i
+            --bd: #434c5e   i
+            --fg: #eceff4   i
+            --cm: #c8ced9   i
+            --ac: #5e81ac   i
+            --sh: #00000021 i
+        } else if ( primary == 'nord-light') {
+            --bg: #eceff4   i
+            --hl: #e5e9f0   i
+            --bd: #c8ced9   i
+            --fg: #2e3440   i
+            --cm: #535c6e   i
+            --ac: #5e81ac   i
+            --sh: #00000009 i
+        } else {
+            --bg: bg i
+            --hl: hl i
+            --bd: bd i
+            --fg: fg i
+            --cm: cm i
+            --ac: ac i
+            --sh: sh i
+        }
+
+        // Secondary colors.
+        if ( secondary == 'gruvbox-neutral' ) {
+            --red    : #cc241d i;
+            --orange : #d64d0e i;
+            --yellow : #d79921 i;
+            --magenta: #c16286 i;
+            --violet : #a14286 i;
+            --green  : #98971a i;
+            --blue   : #458588 i;
+            --cyan   : #689d6a i;
+        } else if ( secondary == 'gruvbox-bright' ) {
+            --red    : #fb4934 i;
+            --orange : #fe8019 i;
+            --yellow : #fabd2f i;
+            --magenta: #d3859b i;
+            --violet : #b3659b i;
+            --green  : #b8bb26 i;
+            --blue   : #83a598 i;
+            --cyan   : #8ec07c i;
+        } else if ( secondary == 'gruvbox-faded' ) {
+            --red    : #9d0006 i;
+            --orange : #af3a03 i;
+            --yellow : #b57614 i;
+            --magenta: #8f3f71 i;
+            --violet : #6f1f71 i;
+            --green  : #79740e i;
+            --blue   : #076678 i;
+            --cyan   : #427b58 i;
+        } else if ( secondary == 'deep-dark' ) {
+            --red    : #da4453 i;
+            --orange : #f79a63 i;
+            --yellow : #fdbc4b i;
+            --magenta: #fe9ead i;
+            --violet : #60459f i;
+            --green  : #27ae60 i;
+            --blue   : #2980b9 i;
+            --cyan   : #1abc9c i;
+        } else if ( secondary == 'solarized' ) {
+            --red    : #dc322f i;
+            --orange : #cb4b16 i;
+            --yellow : #b58900 i;
+            --magenta: #d33682 i;
+            --violet : #6c71c4 i;
+            --green  : #859900 i;
+            --blue   : #268bd2 i;
+            --cyan   : #2aa198 i;
+        } else if ( secondary == 'dracula' ) {
+            --red    : #ff5555 i;
+            --orange : #ffb86c i;
+            --yellow : #f1fa8c i;
+            --magenta: #ff79c6 i;
+            --violet : #bd93f9 i;
+            --green  : #50fa7b i;
+            --blue   : #8be9fd i;
+            --cyan   : #59f7d2 i;
+        } else if ( secondary == 'nord' ) {
+            --red    : #bd616a i;
+            --orange : #d08770 i;
+            --yellow : #ebcb8b i;
+            --magenta: #b48ead i;
+            --violet : #81a1c1 i;
+            --green  : #a3be8c i;
+            --blue   : #88c0d0 i;
+            --cyan   : #8fbcbb i;
+        } else {
+            --red    : red     i;
+            --orange : orange  i;
+            --yellow : yellow  i;
+            --magenta: magenta i;
+            --violet : violet  i;
+            --green  : green   i;
+            --blue   : blue    i;
+            --cyan   : cyan    i;
+        }
+
+        // Explicitly overwrite accent variable.
+        if ( ow_acvar == 1 ) { --ac: ow_ac i }
+
+        // Explicitly overwrite bg variable.
+        if ( ow_bgvar == 1 ) { --background: ow_bg i }
+
+        // Explicitly overwrite shadow variable.
+        if ( ow_shvar == 1 ) { --sh: ow_sh i }
+
+        // Shim for old variables.
+        --dark   : var(--bg) i
+        --darken : var(--hl) i
+        --darker : var(--bd) i
+        --light  : var(--fg) i
+        --lighter: var(--cm) i
+        --accent : var(--ac) i
+        --shadow : var(--sh) i
+
+        // Shim for @RaitaroH's DeepDark variables.
+        if ( deepdark == 1 ) {
+            --main-color       : var(--ac) i
+            --main-background  : var(--bg) i
+            --hover-background : var(--bd) i
+            --second-background: var(--hl) i
+            --main-text        : var(--fg) i
+            --dimmer-text      : var(--cm) i
+        }
+    }
+}

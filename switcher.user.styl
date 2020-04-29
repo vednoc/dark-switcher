@@ -10,6 +10,7 @@
 
 @var checkbox overwrite 'Use `!important` to overwrite colors' 1
 @var checkbox deepdark  'Overwrite colors for DeepDark themes' 1
+@var checkbox whatsapp  'Overwrite Dark-WhatsApp bubbles     ' 1
 
 @var checkbox ow_acvar  'Explicitly overwrite accent variable' 0
 @var color    ow_ac     'Overwrite: Accent variable color    ' #ff3f0f
@@ -364,7 +365,9 @@
         }
 
         // Shim for Dark-WhatsApp's message bubbles.
-        --msg-l: var(--bd) i
-        --msg-r: var(--bb) i
+        if ( whatsapp == 1 ) {
+            --msg-l: var(--bd) i
+            --msg-r: var(--hl) i
+        }
     }
 }

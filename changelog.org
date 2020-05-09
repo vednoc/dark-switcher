@@ -1,6 +1,28 @@
 #+STARTUP: nofold
 
 * Changelog
+** 1.1.0 [2020-04-29 Wed]
+Improved existing color-schemes, added new ones, addded another shim for
+Dark-WhatsApp messages, and added fourth background color variable.
+
+*** Docs
+- Improved userstyle's metadata with missing info
+
+*** Added
+- Primary color-scheme colors:
+  - Dark:
+    1. Arc Dark
+    2. HavocOS
+    3. Nier
+- Fourth background to all color-schemes
+- Shim for Dark-WhatsApp message bubbles
+
+*** Improved
+- Primary colors for all color-schemes
+- Old Solarized Dark got a new look ([[https://gitlab.com/vednoc/dark-switcher/-/merge_requests/5][!5]])
+- Name for /Pure Black/ changed to /Pitch Black/
+- Code cosmetics for secondary color-scheme colors
+
 ** 1.0.0 [2019-09-03 Tue]
 Rewritten in [[https://github.com/stylus/stylus][stylus-lang]] from the scratch, updated code style, and added more
 color-schemes and custom options.

@@ -1,0 +1,41 @@
+#+STARTUP: nofold
+
+* Changelog
+** 1.0.0 [2019-09-03 Tue]
+Rewritten in [[https://github.com/stylus/stylus][stylus-lang]] from the scratch, updated code style, and added more
+color-schemes and custom options.
+
+*** Docs
+- Added license file
+- Readme overhaul
+
+*** Added
+- An option to override variables using =!important=
+- Shim for my old variable names
+- Shim for DeepDark userstyles made by [[https://gitlab.com/RaitaroH][RaitaroH]]
+- Fully customizable colors option
+- Primary (background/foreground/accent) color-scheme colors:
+  - Dark:
+    1. Gruvbox Dark (all three variants)
+    2. DeepDark
+    3. Solarized Dark
+    4. Breeze Dark
+    5. Pure Black (OLED)
+    6. Inspired Dark
+    7. Adapta Nokto
+    8. Dracula
+    9. Nord Dark
+  - Light:
+    1. Gruvbox Light (all three variants)
+    2. Solarized Light
+    3. Nord Light
+- Secondary (syntax highlighting) color-scheme colors:
+  1. Gruvbox (all three variants)
+  2. DeepDark
+  3. Solarized
+  4. DeepDark/Breeze
+  5. Dracula
+  6. Nord
+- An option to override accent color
+- An option to set custom background
+- An option to override shadow color

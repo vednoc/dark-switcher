@@ -78,6 +78,11 @@
 ==/UserStyle== */
 
 @-moz-document regexp('(https?|file|(moz|chrome)-extension)://.*') {
+    // Convert HEX to RGB.
+    to_rgb(input) {
+        unquote(slice(s('%s', rgba(input, 0)), 5, -3))
+    }
+
     :root {
         // Whether to use `!important` or not.
         if ( overwrite == 1 ) { i = !important }
@@ -375,6 +380,16 @@
         --lighter: var(--cm) i
         --accent : var(--ac) i
         --shadow : var(--sh) i
+
+        /// RGB variables.
+        /// Shim for Dark-Instagram.
+        --dark-rgb:    to_rgb(bg) i
+        --darken-rgb:  to_rgb(hl) i
+        --darker-rgb:  to_rgb(bd) i
+        --light-rgb:   to_rgb(fg) i
+        --lighter-rgb: to_rgb(cm) i
+        --accent-rgb:  to_rgb(ac) i
+        --shadow-rgb:  to_rgb(sh) i
 
         // Shim for @RaitaroH's DeepDark variables.
         if ( deepdark == 1 ) {

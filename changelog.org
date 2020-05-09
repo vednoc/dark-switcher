@@ -1,11 +1,33 @@
 #+STARTUP: nofold
 
 * Changelog
+** 1.2.0 [2020-05-10 Sun]
+Added two new color-schemes, added shim for [[https://gitlab.com/vednoc/dark-instagram][Dark-Instagram]], added readme and
+rewrote readme in org-mode.
+
+*** Documentation
+- Added changelog for previous releases
+- Rewrote readme in org-mode
+- Updated copyright year
+
+*** Added
+- Primary color-scheme colors:
+  - Dark:
+    1. GitHub-Dark
+    2. GitHub-Moonlight
+- Secondary color-scheme colors:
+  1. GitHub-Dark
+  2. GitHub-Moonlight
+
+*** Improved
+- Contrast for highlight background color in =custom= option
+- White color for bright secondary colors is now dark gray
+
 ** 1.1.0 [2020-04-29 Wed]
 Improved existing color-schemes, added new ones, addded another shim for
 Dark-WhatsApp messages, and added fourth background color variable.
 
-*** Docs
+*** Documentation
 - Improved userstyle's metadata with missing info
 
 *** Added
@@ -27,7 +49,7 @@ Dark-WhatsApp messages, and added fourth background color variable.
 Rewritten in [[https://github.com/stylus/stylus][stylus-lang]] from the scratch, updated code style, and added more
 color-schemes and custom options.
 
-*** Docs
+*** Documentation
 - Added license file
 - Readme overhaul
 

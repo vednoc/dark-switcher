@@ -1,0 +1,30 @@
+#+STARTUP: nofold
+#+HTML: <div align="center">
+
+* Dark-Switcher
+Dark-Switcher is a global-settings companion-userstyle for my [[https://gitlab.com/vednoc/userstyles][userstyles]].
+
+[[https://gitlab.com/vednoc/dark-switcher/raw/master/switcher.user.styl][https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat]]
+[[https://discord.gg/NpT8PzA][https://img.shields.io/discord/272011641694978048.svg?longCache=true&colorB=7289da&logo=discord&style=flat]]
+#+HTML: </div>
+
+** Features
+- 16 dark and 5 light color-schemes built-in
+- Supports all color variables for my userstyles
+- Supports common options you might want to override
+- Supports DeepDark userstyles made by [[https://gitlab.com/RaitaroH][RaitaroH]]
+- Configurable, extendable, and easy to use
+
+** Installation
+You have to install [[https://add0n.com/stylus.html][Stylus]] and then click on the install link below.
+
+[[https://gitlab.com/vednoc/dark-switcher/raw/master/switcher.user.styl][https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat]]
+
+** Contributing
+Any contribution is greatly appreciated.
+
+If you really like the project and would like to tip me for my work, then you
+can buy me a coffee over at [[https://ko-fi.com/vednoc][ko-fi]] or support me over at [[https://liberapay.com/vednoc][LiberaPay]].
+
+** License
+Code released under the [[license][MIT]] license.

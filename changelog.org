@@ -1,6 +1,20 @@
 #+STARTUP: nofold
 
 * Changelog
+** 1.4.0 [2020-05-30 Sat]
+Added two new color-schemes and improved interop with [[https://github.com/vednoc/dark-whatsapp][Dark-WhatsApp]] variables.
+
+*** Documentation
+- Renamed license file to lowercase letters
+
+*** Added
+- Primary and secondary colors for Horizon and Doom One color-schemes
+- Interop with Dark-WhatsApp to make brighter bubble colors
+- Interop with Dark-WhatsApp to use custom intro image
+
+*** Fixed
+- An issue with Stylus failing to parse custom primary colors
+
 ** 1.3.0 [2020-05-24 Sun]
 Added one new color-scheme and improved interop with [[https://gitlab.com/vednoc/dark-instagram][Dark-Instagram]] variables.
 

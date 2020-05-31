@@ -14,6 +14,7 @@
 @var checkbox deepdark  'Overwrite colors for DeepDark themes' 1
 @var checkbox whatsapp  'Overwrite Dark-WhatsApp bubbles     ' 1
 @var checkbox wa_msg_c  'WhatsApp: Brighter message bubbles  ' 1
+@var checkbox wa_intro  'WhatsApp: Custom intro image colors ' 1
 
 @var checkbox ow_acvar  'Explicitly overwrite accent variable' 0
 @var color    ow_ac     'Overwrite: Accent variable color    ' #ff3f0f
@@ -90,6 +91,10 @@
     // Convert HEX to RGB.
     to_rgb(input) {
         unquote(slice(s('%s', rgba(input, 0)), 5, -3))
+    }
+    // Convert to SVG-friendly colors.
+    to_svg(input) {
+        s('\%23%s', unquote(substr(s('%s', input), 1, 6)))
     }
 
     :root {
@@ -507,6 +512,32 @@
         } else if ( whatsapp == 1 ) {
             --msg-l: var(--bd) i
             --msg-r: var(--hl) i
+        }
+
+        /// Shim for Dark-WhatsApp's intro image.
+        sac = ( ow_acvar ) ? to_svg(ow_ac) : to_svg(_ac)
+        sbg = to_svg(_bg)
+        _1  = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  "
+        _1 += "height='256' width='256'><g stroke='"
+        _2  = "'><path d='M128.4901 30.8659a95.4375 95.4375 0 00-95.4375 95.4375"
+        _2 += " 95.4375 95.4375 0 0014.168 50.0332L35.6698 221.276l44.7989-12.49"
+        _2 += "8a95.4375 95.4375 0 0048.0214 12.9629 95.4375 95.4375 0 0095.4375"
+        _2 += "-95.4375 95.4375 95.4375 0 00-95.4375-95.4375z' fill='"
+        _3  = "' fill-rule='evenodd' stroke-width='18' stroke-linecap='square'/>"
+        _3 += "<path d='M97.8104 79.8463c-4.9671.0406-13.5028 2.0796-17.7812 14."
+        _3 += "8946-6.8318 20.4631 12.5737 43.3028 27.2438 57.4735 14.7975 14.29"
+        _3 += "38 43.1559 26.507 58.0098 21.08 20.5566-8.9065 15.2475-22.9479 15"
+        _3 += ".2475-22.9479l-22.9727-11.0878s-2.062-1.206-3.4146.5737c-1.0042 1"
+        _3 += ".3213-9.4409 11.3755-9.4409 11.3755s-1.449 1.668-3.827.7402c-5.75"
+        _3 += "74-2.2462-14.2018-7.4856-18.5314-10.7795-6.8875-5.2399-12.957-13."
+        _3 += "0846-16.9473-19.668-1.2556-2.5597.6953-4.709.6953-4.709s6.0303-8."
+        _3 += "2629 7.0176-9.5566c1.0068-1.3194.2539-3.3633.2539-3.3633l-10.539-"
+        _3 += "23.2285s-2.0334-.8212-5.0138-.7969z' fill='"
+        _4  = "' stroke-linejoin='round'/></g></svg>"
+        _i  = s('url("%s%s%s%s%s%s%s")', unquote(_1), sac, unquote(_2), sbg,
+                                         unquote(_3), sac, unquote(_4))
+        if ( wa_intro == 1 ) {
+            --intro-image: _i i
         }
     }
 }

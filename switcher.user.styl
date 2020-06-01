@@ -463,11 +463,15 @@
         --bd: _bd i
         --fg: _fg i
         --cm: _cm i
-        --ac: _ac i
         --sh: _sh i
 
         // Explicitly overwrite accent variable.
-        if ( ow_acvar == 1 ) { --ac: ow_ac i }
+        if ( ow_acvar == 1 ) {
+            --ac: ow_ac i
+            _ac = ow_ac
+        } else {
+            --ac: _ac i
+        }
 
         // Explicitly overwrite bg variable.
         if ( ow_bgvar == 1 ) { --background: ow_bg i }

@@ -19,8 +19,8 @@
 @var checkbox ow_acvar  'Explicitly overwrite accent variable' 0
 @var color    ow_ac     'Overwrite: Accent variable color    ' #ff3f0f
 
-@var checkbox ow_bgvar  'Explicitly overwrite bg variable    ' 0
-@var color    ow_bg     'Overwrite: Custom background        ' #00000015
+@var checkbox ow_bbvar  'Explicitly overwrite bb variable    ' 0
+@var color    ow_bb     'Overwrite: Custom background        ' #00000015
 
 @var checkbox ow_shvar  'Explicitly overwrite shadow variable' 0
 @var color    ow_sh     'Overwrite: Custom shadow color      ' #00000030
@@ -473,8 +473,13 @@
             --ac: _ac i
         }
 
-        // Explicitly overwrite bg variable.
-        if ( ow_bgvar == 1 ) { --background: ow_bg i }
+        // Explicitly overwrite bb variable.
+        if ( ow_bbvar == 1 ) {
+            --bb: ow_bb i
+            _bb = ow_bb
+        } else {
+            --bb: _bb i
+        }
 
         // Explicitly overwrite shadow variable.
         if ( ow_shvar == 1 ) { --sh: ow_sh i }

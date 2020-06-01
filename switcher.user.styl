@@ -463,7 +463,6 @@
         --bd: _bd i
         --fg: _fg i
         --cm: _cm i
-        --sh: _sh i
 
         // Explicitly overwrite accent variable.
         if ( ow_acvar == 1 ) {
@@ -482,7 +481,12 @@
         }
 
         // Explicitly overwrite shadow variable.
-        if ( ow_shvar == 1 ) { --sh: ow_sh i }
+        if ( ow_shvar == 1 ) {
+            --sh: ow_sh i
+            _sh = ow_sh
+        } else {
+            --sh: _sh i
+        }
 
         // Shim for old variables.
         --dark   : var(--bg) i

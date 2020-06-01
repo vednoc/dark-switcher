@@ -1,6 +1,15 @@
 #+STARTUP: nofold
 
 * Changelog
+** 1.5.0 [2020-06-01 Mon]
+Added one new color-scheme and improved overriding of color variables.
+
+*** Added
+- Primary colors for Brave Dark color-scheme (Thanks [[https://github.com/E-RELevant][Erel]] for suggestion!)
+
+*** Improved
+- Overriding of background/accent/shadow variables
+
 ** 1.4.0 [2020-05-30 Sat]
 Added two new color-schemes and improved interop with [[https://github.com/vednoc/dark-whatsapp][Dark-WhatsApp]] variables.
 

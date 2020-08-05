@@ -1,6 +1,14 @@
 #+STARTUP: nofold
 
 * Changelog
+** 1.6.0 [2020-08-05 Wed]
+Fixed DWA-specific options in preparation for v2 of Dark-Switcher.
+
+*** Improved
+- Removed redundant check in conditionals
+- Updated styles for DWA intro image
+- Updated styles for DWA message bubble colors
+
 ** 1.5.0 [2020-06-01 Mon]
 Added one new color-scheme and improved overriding of color variables.
 

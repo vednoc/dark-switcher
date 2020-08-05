@@ -528,15 +528,6 @@
             --dimmer-text      : var(--cm) i
         }
 
-        // Shim for Dark-WhatsApp's message bubbles.
-        if (whatsapp && wa_msg_c) {
-            --msg-l: lighten(_bd, 5%) i
-            --msg-r: lighten(_hl, 4%) i
-        } else if (whatsapp) {
-            --msg-l: var(--bd) i
-            --msg-r: var(--hl) i
-        }
-
         /// Shim for Dark-WhatsApp's intro image.
         sac = (ow_acvar) ? to_svg(ow_ac) : to_svg(_ac)
         sbg = to_svg(_bg)
@@ -559,8 +550,24 @@
         _4  = "' stroke-linejoin='round'/></g></svg>"
         _i  = s('url("%s%s%s%s%s%s%s")', unquote(_1), sac, unquote(_2), sbg,
                                          unquote(_3), sac, unquote(_4))
-        if (wa_intro) {
-            &, /.dark {
+
+        // Override WhatsApp selectors.
+        &:not(#z), /.dark:not(#z) {
+            // Shim for Dark-WhatsApp message bubbles.
+            if (whatsapp && wa_msg_c) {
+                --msg-in-0:  lighten(_bd, 4%) i
+                --msg-in-1:  lighten(_bd, 9%) i
+                --msg-out-0: lighten(_hl, 4%) i
+                --msg-out-1: lighten(_hl, 9%) i
+            } else if (whatsapp) {
+                --msg-in-0:  _bd i
+                --msg-in-1:  lighten(_bd, 4%) i
+                --msg-out-0: _hl i
+                --msg-out-1: lighten(_hl, 4%) i
+            }
+
+            // Shim for Dark-WhatsApp intro image.
+            if (wa_intro) {
                 &:not(#z) { --intro-image: _i i }
             }
         }

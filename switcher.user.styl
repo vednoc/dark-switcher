@@ -559,8 +559,10 @@
         _4  = "' stroke-linejoin='round'/></g></svg>"
         _i  = s('url("%s%s%s%s%s%s%s")', unquote(_1), sac, unquote(_2), sbg,
                                          unquote(_3), sac, unquote(_4))
-        if ( wa_intro == 1 ) {
-            --intro-image: _i i
+        if (wa_intro) {
+            &, /.dark {
+                &:not(#z) { --intro-image: _i i }
+            }
         }
     }
 }

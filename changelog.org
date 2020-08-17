@@ -1,6 +1,15 @@
 #+STARTUP: nofold
 
 * Changelog
+** 1.7.0 [2020-08-17 Mon]
+Refactoring primary colors and preparing for color generator.
+
+*** Documentation
+- Updated info in the readme
+
+*** Added
+- Ported core functionality for a color generator used in my userstyles
+
 ** 1.6.0 [2020-08-05 Wed]
 Fixed DWA-specific options in preparation for v2 of Dark-Switcher.
 

@@ -450,7 +450,7 @@ for name, colors in Primary {
 }
 
 @-moz-document regexp('(https?|file|(moz|chrome)-extension)://.*') {
-    :root {
+    :root:not(#x):not(#y), .dark:not(#x):not(#y) {
         /// Color generator debug.
         if (cg_debug) {
             colors: '     -> ' + colors

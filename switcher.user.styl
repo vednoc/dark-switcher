@@ -88,6 +88,18 @@
 @var color cyan    'Custom: Cyan color        ' #5e8d87
 ==/UserStyle== */
 
+// Whether to use `!important` or not.
+if (overwrite) { i = !important }
+
+// Mixin -> Convert HEX to RGB.
+to_rgb(input) {
+    unquote(slice(s('%s', rgba(input, 0)), 5, -3))
+}
+// Mixin -> Convert to SVG-friendly colors.
+to_svg(input) {
+    s('\%23%s', unquote(substr(s('%s', input), 1, 6)))
+}
+
 // Primary colors.
 Primary = {
     'gruvbox-dark-medium': {
@@ -361,20 +373,9 @@ for name, colors in Primary {
 }
 
 @-moz-document regexp('(https?|file|(moz|chrome)-extension)://.*') {
-    // Convert HEX to RGB.
-    to_rgb(input) {
-        unquote(slice(s('%s', rgba(input, 0)), 5, -3))
-    }
-    // Convert to SVG-friendly colors.
-    to_svg(input) {
-        s('\%23%s', unquote(substr(s('%s', input), 1, 6)))
-    }
-
     :root {
-        // Whether to use `!important` or not.
-        if (overwrite) { i = !important }
 
-        // Secondary colors.
+        /// Secondary colors.
         if ( secondary == 'gruvbox-neutral' ) {
             --red    : #cc241d i
             --orange : #d64d0e i

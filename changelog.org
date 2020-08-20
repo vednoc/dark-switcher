@@ -1,6 +1,19 @@
 #+STARTUP: nofold
 
 * Changelog
+** 1.8.0 [2020-08-20 Thu]
+Added color generator from Discord and WhatsApp userstyles, and fixed some small
+bugs that were in the way.
+
+*** Documentation
+- Revised code comments
+
+*** Added
+- Ported color generator from Discord/WhatsApp userstyles
+  - Uses /old/ bg/fg/ac colors as base colors for color generator
+- Added color generator debug option
+  - The output is visible in compiled CSS within DevTools
+
 ** 1.7.0 [2020-08-17 Mon]
 Refactoring primary colors and preparing for color generator.
 

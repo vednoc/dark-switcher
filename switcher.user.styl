@@ -25,6 +25,8 @@
 @var checkbox ow_shvar  'Explicitly overwrite shadow variable' 0
 @var color    ow_sh     'Overwrite: Custom shadow color      ' #00000030
 
+@var checkbox cg_debug  'Enable color generator debug        ' 0
+
 @var select primary 'Primary colors' {
     'Gruvbox Dark Medium    *': 'gruvbox-dark-medium     ',
     'Gruvbox Dark Hard       ': 'gruvbox-dark-hard       ',
@@ -367,6 +369,11 @@ Primary = {
 // Color generator.
 for name, colors in Primary {
     if (name == primary) {
+        if (cg_debug) {
+            selected = name + ' = '
+            for k, v in colors { selected += s('%ss ', v) }
+        }
+
         /// Generate Stylus-lang variables.
         define(key, val, g) for key, val in colors
     }
@@ -374,6 +381,13 @@ for name, colors in Primary {
 
 @-moz-document regexp('(https?|file|(moz|chrome)-extension)://.*') {
     :root {
+        /// Color generator debug.
+        if (cg_debug) {
+            colors: '     -> ' + colors
+            selected: '   -> ' + selected
+            stylus-var: ' -> ' + bg-1
+            css-var: '    -> ' + bg1
+        }
 
         /// Secondary colors.
         if ( secondary == 'gruvbox-neutral' ) {

@@ -612,20 +612,12 @@ for name, colors in Primary {
         --ac: _ac i
 
         // Explicitly overwrite bb variable.
-        if (ow_bbvar) {
-            --bb: ow_bb i
-            _bb = ow_bb
-        } else {
-            --bb: _bb i
-        }
+        _bb = (ow_bbvar) ? ow_bb : _bb
+        --bb: _bb i
 
         // Explicitly overwrite shadow variable.
-        if (ow_shvar) {
-            --sh: ow_sh i
-            _sh = ow_sh
-        } else {
-            --sh: _sh i
-        }
+        _sh = (ow_shvar) ? ow_sh : _sh
+        --sh: _sh i
 
         // Shim for old variables.
         --dark   : var(--bg) i

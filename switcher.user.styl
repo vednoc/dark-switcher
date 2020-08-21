@@ -392,7 +392,7 @@ for name, colors in Primary {
     AA = 0%
     BG = _bg
     FG = _fg
-    AC = _ac
+    AC = (ow_acvar) ? ow_ac : _ac
 
     /// Color generator rules.
     if (dark(BG)) {
@@ -608,12 +608,8 @@ for name, colors in Primary {
         --cm: _cm i
 
         // Explicitly overwrite accent variable.
-        if (ow_acvar) {
-            --ac: ow_ac i
-            _ac = ow_ac
-        } else {
-            --ac: _ac i
-        }
+        _ac = (ow_acvar) ? ow_ac : _ac
+        --ac: _ac i
 
         // Explicitly overwrite bb variable.
         if (ow_bbvar) {

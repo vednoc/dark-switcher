@@ -27,7 +27,7 @@
 
 @var checkbox cg_debug  'Enable color generator debug        ' 0
 
-@var select primary 'Primary colors' {
+@var select   primary   'Primary colors' {
     'Gruvbox Dark Medium    *': 'gruvbox-dark-medium     ',
     'Gruvbox Dark Hard       ': 'gruvbox-dark-hard       ',
     'Gruvbox Dark Soft       ': 'gruvbox-dark-soft       ',
@@ -56,7 +56,7 @@
     'Custom colors           ': 'custom                  ',
 }
 
-@var select secondary 'Secondary colors' {
+@var select   secondary 'Secondary colors' {
     'Gruvbox Neutral        *': 'gruvbox-neutral         ',
     'Gruvbox Bright          ': 'gruvbox-bright          ',
     'Gruvbox Faded           ': 'gruvbox-faded           ',
@@ -72,23 +72,25 @@
     'Custom colors           ': 'custom                  ',
 }
 
-@var color bb      'Custom: Background color  ' #1a1a1a
-@var color bg_     'Base background color     ' #212121
-@var color hl      'Custom: Highlight bg color' #2b2b2b
-@var color bd      'Custom: Secondary bg color' #3e3e3e
-@var color fg_     'Base foreground color     ' #cccccc
-@var color cm      'Custom: Secondary fg color' #9d9d9d
-@var color ac_     'Base accent color         ' #0f8f7f
-@var color sh      'Custom: Shadow color      ' #00000065
-@var color red     'Custom: Red color         ' #a54242
-@var color orange  'Custom: Orange color      ' #de935f
-@var color yellow  'Custom: Yellow color      ' #f0c674
-@var color magenta 'Custom: Magenta color     ' #b294bb
-@var color violet  'Custom: Violet color      ' #85678f
-@var color green   'Custom: Green color       ' #8c9440
-@var color blue    'Custom: Blue color        ' #5f819d
-@var color cyan    'Custom: Cyan color        ' #5e8d87
-@var color white   'Custom: White color       ' #ffffff
+@var color    bb       'Custom: Background color      ' #1a1a1a
+@var color    _bg      'Base background color         ' #212121
+@var color    hl       'Custom: Highlight bg color    ' #2b2b2b
+@var color    bd       'Custom: Secondary bg color    ' #3e3e3e
+@var color    _fg      'Base foreground color         ' #cccccc
+@var color    cm       'Custom: Secondary fg color    ' #9d9d9d
+@var color    _ac      'Base accent color             ' #0f8f7f
+
+@var color    _red       'Base red color              ' #f07178
+@var color    _orange    'Base orange color           ' #f78c6c
+@var color    _yellow    'Base yellow color           ' #ffcb6b
+@var color    _green     'Base green color            ' #c3e88d
+@var color    _cyan      'Base cyan color             ' #89ddff
+@var color    _blue      'Base blue color             ' #82aaff
+@var color    _magenta   'Base magenta color          ' #c792ea
+@var color    _violet    'Base violet color           ' #9a91ea
+@var color    _white     'White color                 ' #ffffff
+
+@var color    sh         'Custom: Shadow color        ' #00000065
 ==/UserStyle== */
 
 // Whether to use `!important` or not.
@@ -361,14 +363,148 @@ Primary = {
     },
     'custom': {
         _bb: bb
-        _bg: bg_
+        _bg: _bg
         _hl: hl
         _bd: bd
-        _fg: fg_
+        _fg: _fg
         _cm: cm
-        _ac: ac_
+        _ac: _ac
         _sh: sh
     },
+}
+
+/// Secondary colors.
+Secondary = {
+    'gruvbox-neutral': {
+        _red: #cc241d
+        _orange: #d64d0e
+        _yellow: #d79921
+        _green: #98971a
+        _cyan: #689d6a
+        _blue: #458588
+        _magenta: #c16286
+        _violet: #a14286
+    },
+    'gruvbox-bright': {
+        _red: #fb4934
+        _orange: #fe8019
+        _yellow: #fabd2f
+        _green: #b8bb26
+        _cyan: #8ec07c
+        _blue: #83a598
+        _magenta: #d3859b
+        _violet: #b3659b
+    },
+    'gruvbox-faded': {
+        _red: #9d0006
+        _orange: #af3a03
+        _yellow: #b57614
+        _green: #79740e
+        _cyan: #427b58
+        _blue: #076678
+        _magenta: #8f3f71
+        _violet: #6f1f71
+    },
+    'deep-dark': {
+        _red: #da4453
+        _orange: #f79a63
+        _yellow: #fdbc4b
+        _green: #27ae60
+        _cyan: #1abc9c
+        _blue: #2980b9
+        _magenta: #fe9ead
+        _violet: #60459f
+    },
+    'solarized': {
+        _red: #dc322f
+        _orange: #cb4b16
+        _yellow: #b58900
+        _green: #859900
+        _cyan: #2aa198
+        _blue: #268bd2
+        _magenta: #d33682
+        _violet: #6c71c4
+    },
+    'dracula': {
+        _red: #ff5555
+        _orange: #ffb86c
+        _yellow: #f1fa8c
+        _green: #50fa7b
+        _cyan: #59f7d2
+        _blue: #8be9fd
+        _magenta: #ff79c6
+        _violet: #bd93f9
+    },
+    'nord': {
+        _red: #bd616a
+        _orange: #d08770
+        _yellow: #ebcb8b
+        _green: #a3be8c
+        _cyan: #8fbcbb
+        _blue: #88c0d0
+        _magenta: #b48ead
+        _violet: #81a1c1
+    },
+    'github-dark': {
+        _red: #ff4444
+        _orange: #fe9600
+        _yellow: #ffcc33
+        _green: #008833
+        _cyan: #4d5eff
+        _blue: #4f8cc9
+        _magenta: #8368aa
+        _violet: #6e5494
+    },
+    'moonlight': {
+        _red: #ff5370
+        _orange: #ff995e
+        _yellow: #ffc777
+        _green: #c3e88d
+        _cyan: #86e1fc
+        _blue: #82aaff
+        _magenta: #fca7ea
+        _violet: #c597f9
+    },
+    'monokai': {
+        _red: #e73c50
+        _orange: #fd9720
+        _yellow: #e6db74
+        _green: #a6e22d
+        _cyan: #66d9ef
+        _blue: #7aa6da
+        _magenta: #f92772
+        _violet: #ae81ff
+    },
+    'horizon': {
+        _red: #e95678
+        _orange: #f09383
+        _yellow: #fab795
+        _green: #09f7a0
+        _cyan: #59e3e3
+        _blue: #21bfc2
+        _magenta: #db77cc
+        _violet: #b877db
+    },
+    'doom-one': {
+        _red: #ff6c6b
+        _orange: #da8548
+        _yellow: #ecbe7b
+        _green: #98be65
+        _cyan: #46d9ff
+        _blue: #51afef
+        _magenta: #c678dd
+        _violet: #a9a1e1
+    },
+    'custom': {
+        _red: _red
+        _orange: _orange
+        _yellow: _yellow
+        _green: _green
+        _cyan: _cyan
+        _blue: _blue
+        _magenta: _magenta
+        _violet: _violet
+    }
 }
 
 // Generate old color variables.
@@ -382,6 +518,15 @@ for name, colors in Primary {
 
         /// Generate Stylus-lang variables.
         define(key, val, g) for key, val in colors
+for name, colors in Secondary {
+    if (name == secondary) {
+        if (cg_debug) {
+            selected2 = name + ' = '
+            for k, v in colors { selected2 += s('%ss ', v) }
+        }
+
+        /// Generate Stylus-lang variables.
+        define(key, val, g) for key, val in colors
     }
 }
 
@@ -391,6 +536,7 @@ for name, colors in Primary {
     BA = 0%
     FA = 0%
     AA = 0%
+    SA = 0%
     BG = _bg
     FG = _fg
     AC = (ow_acvar) ? ow_ac : _ac
@@ -398,10 +544,12 @@ for name, colors in Primary {
     /// Color generator rules.
     if (dark(BG)) {
         a1 = (AA + 15); a2 = (AA + 30); a3 = (AA + 45); a4 = (AA + 65); a5 = (AA + 75)
+        s1 = (SA + 15); s2 = (SA + 30); s3 = (SA + 45); s4 = (SA + 65); s5 = (SA + 75)
         b1 = (BA + 10); b2 = (BA - 05); b3 = (BA - 10); b4 = (BA - 15); b5 = (BA - 20)
         f1 = (FA - 10); f2 = (FA + 10); f3 = (FA + 20); f4 = (FA + 30); f5 = (FA + 40)
     } else {
         a1 = (AA + 15); a2 = (AA + 30); a3 = (AA + 45); a4 = (AA + 65); a5 = (AA + 75)
+        s1 = (SA + 15); s2 = (SA + 30); s3 = (SA + 45); s4 = (SA + 65); s5 = (SA + 75)
         b1 = (BA - 10); b2 = (BA + 08); b3 = (BA + 16); b4 = (BA + 24); b5 = (BA + 32)
         f1 = (FA - 05); f2 = (FA - 10); f3 = (FA - 15); f4 = (FA - 20); f5 = (FA - 30)
     }
@@ -432,9 +580,73 @@ for name, colors in Primary {
             '4': mix(darken(BG, 40%), AC, a4),
             '5': mix(darken(BG, 40%), AC, a5),
         },
+        b1: {
+            '0': spin(_red,  0deg - 0%)
+            '1': spin(_red, 15deg - s1)
+            '2': spin(_red, 30deg - s2)
+            '3': mix(darken(BG, 20%), _red, s3)
+            '4': mix(darken(BG, 40%), _red, s4)
+            '5': mix(darken(BG, 40%), _red, s5)
+        },
+        b2: {
+            '0': spin(_orange,  0deg - 0%)
+            '1': spin(_orange, 15deg - s1)
+            '2': spin(_orange, 30deg - s2)
+            '3': mix(darken(BG, 20%), _orange, s3)
+            '4': mix(darken(BG, 40%), _orange, s4)
+            '5': mix(darken(BG, 40%), _orange, s5)
+        },
+        b3: {
+            '0': spin(_yellow,  0deg - 0%)
+            '1': spin(_yellow, 15deg - s1)
+            '2': spin(_yellow, 30deg - s2)
+            '3': mix(darken(BG, 20%), _yellow, s3)
+            '4': mix(darken(BG, 40%), _yellow, s4)
+            '5': mix(darken(BG, 40%), _yellow, s5)
+        },
+        b4: {
+            '0': spin(_green,  0deg - 0%)
+            '1': spin(_green, 15deg - s1)
+            '2': spin(_green, 30deg - s2)
+            '3': mix(darken(BG, 20%), _green, s3)
+            '4': mix(darken(BG, 40%), _green, s4)
+            '5': mix(darken(BG, 40%), _green, s5)
+        },
+        b5: {
+            '0': spin(_cyan,  0deg - 0%)
+            '1': spin(_cyan, 15deg - s1)
+            '2': spin(_cyan, 30deg - s2)
+            '3': mix(darken(BG, 20%), _cyan, s3)
+            '4': mix(darken(BG, 40%), _cyan, s4)
+            '5': mix(darken(BG, 40%), _cyan, s5)
+        },
+        b6: {
+            '0': spin(_blue,  0deg - 0%)
+            '1': spin(_blue, 15deg - s1)
+            '2': spin(_blue, 30deg - s2)
+            '3': mix(darken(BG, 20%), _blue, s3)
+            '4': mix(darken(BG, 40%), _blue, s4)
+            '5': mix(darken(BG, 40%), _blue, s5)
+        },
+        b7: {
+            '0': spin(_magenta,  0deg - 0%)
+            '1': spin(_magenta, 15deg - s1)
+            '2': spin(_magenta, 30deg - s2)
+            '3': mix(darken(BG, 20%), _magenta, s3)
+            '4': mix(darken(BG, 40%), _magenta, s4)
+            '5': mix(darken(BG, 40%), _magenta, s5)
+        },
+        b8: {
+            '0': spin(_violet,  0deg - 0%)
+            '1': spin(_violet, 15deg - s1)
+            '2': spin(_violet, 30deg - s2)
+            '3': mix(darken(BG, 20%), _violet, s3)
+            '4': mix(darken(BG, 40%), _violet, s4)
+            '5': mix(darken(BG, 40%), _violet, s5)
+        }
     }
 
-    /// Generate variables.
+    /// Generate primary variables.
     for name, colors in Primary {
         if (name == primary) {
             /// Generate Stylus-lang variables.
@@ -446,6 +658,31 @@ for name, colors in Primary {
             define('bg' + key, s('var(--bg-%s)', unquote(key)), g) for key, val in C.bg
             define('fg' + key, s('var(--fg-%s)', unquote(key)), g) for key, val in C.fg
             define('ac' + key, s('var(--ac-%s)', unquote(key)), g) for key, val in C.ac
+        }
+    }
+
+    /// Generate secondary variables.
+    for name, colors in Secondary {
+        if (name == secondary) {
+            /// Generate Stylus-lang variables.
+            define('b1-' + key, val, g) for key, val in C.b1
+            define('b2-' + key, val, g) for key, val in C.b2
+            define('b3-' + key, val, g) for key, val in C.b3
+            define('b4-' + key, val, g) for key, val in C.b4
+            define('b5-' + key, val, g) for key, val in C.b5
+            define('b6-' + key, val, g) for key, val in C.b6
+            define('b7-' + key, val, g) for key, val in C.b7
+            define('b8-' + key, val, g) for key, val in C.b8
+
+            /// Generate Stylus-lang helpers for CSS variables.
+            define('b1' + key, s('var(--b1-%s)', unquote(key)), g) for key, val in C.b1
+            define('b2' + key, s('var(--b2-%s)', unquote(key)), g) for key, val in C.b2
+            define('b3' + key, s('var(--b3-%s)', unquote(key)), g) for key, val in C.b3
+            define('b4' + key, s('var(--b4-%s)', unquote(key)), g) for key, val in C.b4
+            define('b5' + key, s('var(--b5-%s)', unquote(key)), g) for key, val in C.b5
+            define('b6' + key, s('var(--b6-%s)', unquote(key)), g) for key, val in C.b6
+            define('b7' + key, s('var(--b7-%s)', unquote(key)), g) for key, val in C.b7
+            define('b8' + key, s('var(--b8-%s)', unquote(key)), g) for key, val in C.b8
         }
     }
 }
@@ -460,136 +697,9 @@ for name, colors in Primary {
             css-var: '    -> ' + bg1
         }
 
-        /// Secondary colors.
-        if ( secondary == 'gruvbox-neutral' ) {
-            --red    : #cc241d i
-            --orange : #d64d0e i
-            --yellow : #d79921 i
-            --magenta: #c16286 i
-            --violet : #a14286 i
-            --green  : #98971a i
-            --blue   : #458588 i
-            --cyan   : #689d6a i
-        } else if ( secondary == 'gruvbox-bright' ) {
-            --red    : #fb4934 i
-            --orange : #fe8019 i
-            --yellow : #fabd2f i
-            --magenta: #d3859b i
-            --violet : #b3659b i
-            --green  : #b8bb26 i
-            --blue   : #83a598 i
-            --cyan   : #8ec07c i
-            --white  : #444444 i
-        } else if ( secondary == 'gruvbox-faded' ) {
-            --red    : #9d0006 i
-            --orange : #af3a03 i
-            --yellow : #b57614 i
-            --magenta: #8f3f71 i
-            --violet : #6f1f71 i
-            --green  : #79740e i
-            --blue   : #076678 i
-            --cyan   : #427b58 i
-        } else if ( secondary == 'deep-dark' ) {
-            --red    : #da4453 i
-            --orange : #f79a63 i
-            --yellow : #fdbc4b i
-            --magenta: #fe9ead i
-            --violet : #60459f i
-            --green  : #27ae60 i
-            --blue   : #2980b9 i
-            --cyan   : #1abc9c i
-        } else if ( secondary == 'solarized' ) {
-            --red    : #dc322f i
-            --orange : #cb4b16 i
-            --yellow : #b58900 i
-            --magenta: #d33682 i
-            --violet : #6c71c4 i
-            --green  : #859900 i
-            --blue   : #268bd2 i
-            --cyan   : #2aa198 i
-        } else if ( secondary == 'dracula' ) {
-            --red    : #ff5555 i
-            --orange : #ffb86c i
-            --yellow : #f1fa8c i
-            --magenta: #ff79c6 i
-            --violet : #bd93f9 i
-            --green  : #50fa7b i
-            --blue   : #8be9fd i
-            --cyan   : #59f7d2 i
-            --white  : #444444 i
-        } else if ( secondary == 'nord' ) {
-            --red    : #bd616a i
-            --orange : #d08770 i
-            --yellow : #ebcb8b i
-            --magenta: #b48ead i
-            --violet : #81a1c1 i
-            --green  : #a3be8c i
-            --blue   : #88c0d0 i
-            --cyan   : #8fbcbb i
-            --white  : #444444 i
-        } else if ( secondary == 'github-dark') {
-            --yellow : #ffcc33 i
-            --orange : #fe9600 i
-            --red    : #ff4444 i
-            --magenta: #8368aa i
-            --violet : #6e5494 i
-            --blue   : #4f8cc9 i
-            --cyan   : #4d5eff i
-            --green  : #008833 i
-        } else if ( secondary == 'moonlight' ) {
-            --red    : #ff5370 i
-            --orange : #ff995e i
-            --yellow : #ffc777 i
-            --magenta: #fca7ea i
-            --violet : #c597f9 i
-            --green  : #c3e88d i
-            --blue   : #82aaff i
-            --cyan   : #86e1fc i
-            --white  : #444444 i
-        } else if ( secondary == 'monokai' ) {
-            --red    : #e73c50 i
-            --orange : #fd9720 i
-            --yellow : #e6db74 i
-            --magenta: #f92772 i
-            --violet : #ae81ff i
-            --green  : #a6e22d i
-            --blue   : #7aa6da i
-            --cyan   : #66d9ef i
-            --white  : #333333 i
-        } else if ( secondary == 'horizon' ) {
-            --red    : #e95678 i
-            --orange : #f09383 i
-            --yellow : #fab795 i
-            --magenta: #db77cc i
-            --violet : #b877db i
-            --green  : #09f7a0 i
-            --blue   : #21bfc2 i
-            --cyan   : #59e3e3 i
-            --white  : #333333 i
-        } else if ( secondary == 'doom-one' ) {
-            --red    : #ff6c6b i
-            --orange : #da8548 i
-            --yellow : #ecbe7b i
-            --magenta: #c678dd i
-            --violet : #a9a1e1 i
-            --green  : #98be65 i
-            --blue   : #51afef i
-            --cyan   : #46d9ff i
-            --white  : #222222 i
-        } else {
-            --red    : red     i
-            --orange : orange  i
-            --yellow : yellow  i
-            --magenta: magenta i
-            --violet : violet  i
-            --green  : green   i
-            --blue   : blue    i
-            --cyan   : cyan    i
-            --white  : white   i
-        }
 
         /// Generate color variables.
-        for _v in (bg fg ac) {
+        for _v in (bg fg ac b1 b2 b3 b4 b5 b6 b7 b8) {
             for _i in 0..5 {
                 key = s('--%s-%s', _v, _i)
                 /// Escape `\` for `*-0` vars.

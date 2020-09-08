@@ -1,6 +1,24 @@
 #+STARTUP: nofold
 
 * Changelog
+** 2.0.0 [2020-09-08 Tue]
+Adding secondary (syntax) colors to color generator, which breaks some options
+(by reverting them to their default values), so I'm bumping the major version. I
+also did some preparation work to simplify adding color-schemes in the future.
+
+*** Docs
+- Revised code comments and metadata
+
+*** Added
+- Syntax colors are now a part of the color generator
+- You can now override =white= color variable
+- Generated tones can now be adjusted
+
+*** Improved
+- Added more of my old v1/v2 color variables
+- Simplified various shims for Dark-WhatsApp and color variables
+- Better output for color generator debug
+
 ** 1.9.0 [2020-08-21 Fri]
 Updated old logic for overwrites and added an option to set custom =white=
 secondary color.

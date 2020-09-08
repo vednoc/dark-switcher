@@ -20,7 +20,10 @@
 @var color    ow_ac     'Overwrite: Accent variable color    ' #ff3f0f
 
 @var checkbox ow_bbvar  'Explicitly overwrite bb variable    ' 0
-@var color    ow_bb     'Overwrite: Custom background        ' #00000015
+@var color    ow_bb     'Overwrite: Custom background color  ' #00000015
+
+@var checkbox ow_whvar  'Explicitly overwrite white variable ' 0
+@var color    ow_wh     'Overwrite: Custom white color k     ' #ffffff
 
 @var checkbox ow_shvar  'Explicitly overwrite shadow variable' 0
 @var color    ow_sh     'Overwrite: Custom shadow color      ' #00000030
@@ -393,6 +396,7 @@ Secondary = {
         _blue: #83a598
         _magenta: #d3859b
         _violet: #b3659b
+        _white: #333333
     },
     'gruvbox-faded': {
         _red: #9d0006
@@ -433,6 +437,7 @@ Secondary = {
         _blue: #8be9fd
         _magenta: #ff79c6
         _violet: #bd93f9
+        _white: #333333
     },
     'nord': {
         _red: #bd616a
@@ -443,6 +448,7 @@ Secondary = {
         _blue: #88c0d0
         _magenta: #b48ead
         _violet: #81a1c1
+        _white: #333333
     },
     'github-dark': {
         _red: #ff4444
@@ -463,6 +469,7 @@ Secondary = {
         _blue: #82aaff
         _magenta: #fca7ea
         _violet: #c597f9
+        _white: #333333
     },
     'monokai': {
         _red: #e73c50
@@ -473,6 +480,7 @@ Secondary = {
         _blue: #7aa6da
         _magenta: #f92772
         _violet: #ae81ff
+        _white: #333333
     },
     'horizon': {
         _red: #e95678
@@ -483,6 +491,7 @@ Secondary = {
         _blue: #21bfc2
         _magenta: #db77cc
         _violet: #b877db
+        _white: #333333
     },
     'doom-one': {
         _red: #ff6c6b
@@ -493,6 +502,7 @@ Secondary = {
         _blue: #51afef
         _magenta: #c678dd
         _violet: #a9a1e1
+        _white: #222222
     },
     'custom': {
         _red: _red
@@ -503,6 +513,7 @@ Secondary = {
         _blue: _blue
         _magenta: _magenta
         _violet: _violet
+        _white: white
     }
 }
 
@@ -729,6 +740,9 @@ for name, colors in Secondary {
         _bb = (ow_bbvar) ? ow_bb : _bb
         --bb: _bb i
 
+        // Explicitly overwrite white variable.
+        _wh = (ow_whvar) ? ow_wh : _white
+
         // Explicitly overwrite shadow variable.
         _sh = (ow_shvar) ? ow_sh : _sh
         --sh: _sh i
@@ -749,6 +763,7 @@ for name, colors in Secondary {
         --blue:    b60 i
         --magenta: b70 i
         --violet:  b80 i
+        --white:   _wh i
 
         /// RGB variables.
         /// Shim for Dark-Instagram.
@@ -760,6 +775,7 @@ for name, colors in Secondary {
         --lighter-rgb: to_rgb(_cm) i
         --accent-rgb:  to_rgb(_ac) i
         --shadow-rgb:  to_rgb(_sh) i
+        --white-rgb:   to_rgb(_wh) i
 
         // Shim for @RaitaroH's DeepDark variables.
         if (deepdark) {

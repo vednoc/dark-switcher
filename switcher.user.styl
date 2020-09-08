@@ -75,6 +75,11 @@
     'Custom colors           ': 'custom                  ',
 }
 
+@var range    cg_bg_a    'Adjust bg color tones       ' [0, -25, 25, 0.1, '%']
+@var range    cg_fg_a    'Adjust fg color tones       ' [0, -25, 25, 0.1, '%']
+@var range    cg_ac_a    'Adjust accent color tones   ' [0,   0, 25,   1, '%']
+@var range    cg_sc_a    'Adjust syntax color tones   ' [0,   0, 25,   1, '%']
+
 @var color    _bg        'Base background color       ' #212121
 @var color    _fg        'Base foreground color       ' #cccccc
 @var color    _ac        'Base accent color           ' #0f8f7f
@@ -546,10 +551,10 @@ for name, colors in Secondary {
 // Color generator.
 /// NOTE: Scope the variables to avoid potential conflicts.
 /{
-    BA = 0%
-    FA = 0%
-    AA = 0%
-    SA = 0%
+    BA = cg_bg_a
+    FA = cg_fg_a
+    AA = cg_ac_a
+    SA = cg_sc_a
     BG = _bg
     FG = _fg
     AC = (ow_acvar) ? ow_ac : _ac

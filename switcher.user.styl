@@ -770,8 +770,8 @@ for name, colors in Secondary {
         }
 
         /// Shim for Dark-WhatsApp's intro image.
-        sac = (ow_acvar) ? to_svg(ow_ac) : to_svg(_ac)
-        sbg = to_svg(_bg)
+        sac = (ow_acvar) ? to_svg(ow_ac) : to_svg(ac-0)
+        sbg = to_svg(bg-2)
         _1  = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  "
         _1 += "height='256' width='256'><g stroke='"
         _2  = "'><path d='M128.4901 30.8659a95.4375 95.4375 0 00-95.4375 95.4375"
@@ -789,28 +789,25 @@ for name, colors in Secondary {
         _3 += "2629 7.0176-9.5566c1.0068-1.3194.2539-3.3633.2539-3.3633l-10.539-"
         _3 += "23.2285s-2.0334-.8212-5.0138-.7969z' fill='"
         _4  = "' stroke-linejoin='round'/></g></svg>"
-        _i  = s('url("%s%s%s%s%s%s%s")', unquote(_1), sac, unquote(_2), sbg,
+        img = s('url("%s%s%s%s%s%s%s")', unquote(_1), sac, unquote(_2), sbg,
                                          unquote(_3), sac, unquote(_4))
 
-        // Override WhatsApp selectors.
-        &:not(#z), /.dark:not(#z) {
-            // Shim for Dark-WhatsApp message bubbles.
-            if (whatsapp && wa_msg_c) {
-                --msg-in-0:  lighten(_bd, 4%) i
-                --msg-in-1:  lighten(_bd, 9%) i
-                --msg-out-0: lighten(_hl, 4%) i
-                --msg-out-1: lighten(_hl, 9%) i
-            } else if (whatsapp) {
-                --msg-in-0:  _bd i
-                --msg-in-1:  lighten(_bd, 4%) i
-                --msg-out-0: _hl i
-                --msg-out-1: lighten(_hl, 4%) i
-            }
+        // Shim for Dark-WhatsApp's message bubbles.
+        if (whatsapp && wa_msg_c) {
+            --msg-in-0:  lighten(_bd, 4%) i
+            --msg-in-1:  lighten(_bd, 9%) i
+            --msg-out-0: lighten(_hl, 4%) i
+            --msg-out-1: lighten(_hl, 9%) i
+        } else if (whatsapp) {
+            --msg-in-0:  _bd i
+            --msg-in-1:  lighten(_bd, 4%) i
+            --msg-out-0: _hl i
+            --msg-out-1: lighten(_hl, 4%) i
+        }
 
-            // Shim for Dark-WhatsApp intro image.
-            if (wa_intro) {
-                &:not(#z) { --intro-image: _i i }
-            }
+        // Shim for Dark-WhatsApp's intro image.
+        if (wa_intro) {
+            --intro-image: img i
         }
     }
 }

@@ -704,10 +704,12 @@ for name, colors in Secondary {
     :root:not(#x):not(#y), .dark:not(#x):not(#y) {
         /// Color generator debug.
         if (cg_debug) {
-            colors: '     -> ' + colors
-            selected: '   -> ' + selected
-            stylus-var: ' -> ' + bg-1
-            css-var: '    -> ' + bg1
+            primary: '    -> ' + selected
+            secondary: '  -> ' + selected2
+            p-styl-var: ' -> ' + bg-1
+            p-css-var: '  -> ' + bg1
+            s-styl-var: ' -> ' + b1-1
+            p-css-var: '  -> ' + b10
         }
 
         /// Generate color variables.

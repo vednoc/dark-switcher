@@ -812,16 +812,17 @@ for name, colors in Secondary {
                                          unquote(_3), sac, unquote(_4))
 
         /// Shim for Dark-WhatsApp's message bubbles.
-        if (whatsapp && wa_msg_c) {
-            --msg-in-0:  lighten(_bd, 4%) i
-            --msg-in-1:  lighten(_bd, 9%) i
-            --msg-out-0: lighten(_hl, 4%) i
-            --msg-out-1: lighten(_hl, 9%) i
-        } else if (whatsapp) {
-            --msg-in-0:  _bd i
-            --msg-in-1:  lighten(_bd, 4%) i
-            --msg-out-0: _hl i
-            --msg-out-1: lighten(_hl, 4%) i
+        if (whatsapp) {
+            r = to_rgb
+            l = lighten
+            --msg-in-0:      (wa_msg_c) ?   l(_bd, 4%)  :   _bd
+            --msg-in-0-rgb:  (wa_msg_c) ? r(l(_bd, 4%)) : r(_bd)
+            --msg-in-1:      (wa_msg_c) ?   l(_bd, 9%)  :   l(_bd, 4%)
+            --msg-in-1-rgb:  (wa_msg_c) ? r(l(_bd, 9%)) : r(l(_bd, 4%))
+            --msg-out-0:     (wa_msg_c) ?   l(_hl, 4%)  :   _hl
+            --msg-out-0-rgb: (wa_msg_c) ? r(l(_hl, 4%)) : r(_hl)
+            --msg-out-1:     (wa_msg_c) ?   l(_hl, 9%)  :   l(_hl, 4%)
+            --msg-out-1-rgb: (wa_msg_c) ? r(l(_hl, 9%)) : r(l(_hl, 4%))
         }
 
         /// Shim for Dark-WhatsApp's intro image.

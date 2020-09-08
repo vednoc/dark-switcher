@@ -711,7 +711,7 @@ for name, colors in Secondary {
             }
         }
 
-        /// Default variables.
+        /// Shim for v2 variables.
         --bb: _bb i
         --bg: _bg i
         --hl: _hl i
@@ -731,34 +731,42 @@ for name, colors in Secondary {
         _sh = (ow_shvar) ? ow_sh : _sh
         --sh: _sh i
 
-        // Shim for old variables.
-        --dark   : var(--bg) i
-        --darken : var(--hl) i
-        --darker : var(--bd) i
-        --light  : var(--fg) i
-        --lighter: var(--cm) i
-        --accent : var(--ac) i
-        --shadow : var(--sh) i
+        // Shim for v1 variables.
+        --dark:    _bg i
+        --darken:  _hl i
+        --darker:  _bd i
+        --light:   _fg i
+        --lighter: _cm i
+        --accent:  _ac i
+        --shadow:  _sh i
+        --red:     b10 i
+        --orange:  b20 i
+        --yellow:  b30 i
+        --green:   b40 i
+        --cyan:    b50 i
+        --blue:    b60 i
+        --magenta: b70 i
+        --violet:  b80 i
 
         /// RGB variables.
         /// Shim for Dark-Instagram.
-        --bb-rgb      to_rgb(_bb) i
-        --dark-rgb    to_rgb(_bg) i
-        --darken-rgb  to_rgb(_hl) i
-        --darker-rgb  to_rgb(_bd) i
-        --light-rgb   to_rgb(_fg) i
-        --lighter-rgb to_rgb(_cm) i
-        --accent-rgb  to_rgb(_ac) i
-        --shadow-rgb  to_rgb(_sh) i
+        --bb-rgb:      to_rgb(_bb) i
+        --dark-rgb:    to_rgb(_bg) i
+        --darken-rgb:  to_rgb(_hl) i
+        --darker-rgb:  to_rgb(_bd) i
+        --light-rgb:   to_rgb(_fg) i
+        --lighter-rgb: to_rgb(_cm) i
+        --accent-rgb:  to_rgb(_ac) i
+        --shadow-rgb:  to_rgb(_sh) i
 
         // Shim for @RaitaroH's DeepDark variables.
         if (deepdark) {
-            --main-color       : var(--ac) i
-            --main-background  : var(--bg) i
-            --hover-background : var(--bd) i
-            --second-background: var(--hl) i
-            --main-text        : var(--fg) i
-            --dimmer-text      : var(--cm) i
+            --main-color:        _ac i
+            --main-background:   _bg i
+            --hover-background:  _bd i
+            --second-background: _hl i
+            --main-text:         _fg i
+            --dimmer-text:       _cm i
         }
 
         /// Shim for Dark-WhatsApp's intro image.

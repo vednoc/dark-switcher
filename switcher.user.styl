@@ -517,7 +517,7 @@ Secondary = {
     }
 }
 
-// Generate variables for use in the color generator.
+// Generate primary color variables for color generator.
 for name, colors in Primary {
     if (name == cg_main) {
         if (cg_debug) {
@@ -530,7 +530,7 @@ for name, colors in Primary {
     }
 }
 
-// Generate variables for use in the color generator.
+// Generate secondary colro variables for color generator.
 for name, colors in Secondary {
     if (name == cg_syntax) {
         if (cg_debug) {
@@ -710,7 +710,6 @@ for name, colors in Secondary {
             css-var: '    -> ' + bg1
         }
 
-
         /// Generate color variables.
         for _v in (bg fg ac b1 b2 b3 b4 b5 b6 b7 b8) {
             for _i in 0..5 {
@@ -732,22 +731,22 @@ for name, colors in Secondary {
         --fg: _fg i
         --cm: _cm i
 
-        // Explicitly overwrite accent variable.
+        /// Explicitly overwrite accent variable.
         _ac = (ow_acvar) ? ow_ac : _ac
         --ac: _ac i
 
-        // Explicitly overwrite bb variable.
+        /// Explicitly overwrite alt background variable.
         _bb = (ow_bbvar) ? ow_bb : _bb
         --bb: _bb i
 
-        // Explicitly overwrite white variable.
+        /// Explicitly overwrite white variable.
         _wh = (ow_whvar) ? ow_wh : _white
 
-        // Explicitly overwrite shadow variable.
+        /// Explicitly overwrite shadow variable.
         _sh = (ow_shvar) ? ow_sh : _sh
         --sh: _sh i
 
-        // Shim for v1 variables.
+        /// Shim for v1 variables.
         --dark:    _bg i
         --darken:  _hl i
         --darker:  _bd i
@@ -777,7 +776,7 @@ for name, colors in Secondary {
         --shadow-rgb:  to_rgb(_sh) i
         --white-rgb:   to_rgb(_wh) i
 
-        // Shim for @RaitaroH's DeepDark variables.
+        /// Shim for @RaitaroH's DeepDark variables.
         if (deepdark) {
             --main-color:        _ac i
             --main-background:   _bg i
@@ -810,7 +809,7 @@ for name, colors in Secondary {
         img = s('url("%s%s%s%s%s%s%s")', unquote(_1), sac, unquote(_2), sbg,
                                          unquote(_3), sac, unquote(_4))
 
-        // Shim for Dark-WhatsApp's message bubbles.
+        /// Shim for Dark-WhatsApp's message bubbles.
         if (whatsapp && wa_msg_c) {
             --msg-in-0:  lighten(_bd, 4%) i
             --msg-in-1:  lighten(_bd, 9%) i
@@ -823,7 +822,7 @@ for name, colors in Secondary {
             --msg-out-1: lighten(_hl, 4%) i
         }
 
-        // Shim for Dark-WhatsApp's intro image.
+        /// Shim for Dark-WhatsApp's intro image.
         if (wa_intro) {
             --intro-image: img i
         }
